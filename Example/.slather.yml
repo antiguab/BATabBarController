@@ -1,0 +1,8 @@
+xcodeproj: BATabBarController.xcodeproj
+scheme: BATabBarController-Example
+workspace: BATabBarController.xcworkspace
+source_directory: BATabBarController/Classes
+ignore:
+  - Tests/*
+  - Pods/*
+  - html/*

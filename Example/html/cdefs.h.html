@@ -1,0 +1,3577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>cdefs.h - Slather</title>
+<link href="slather.css" media="all" rel="stylesheet">
+</head>
+<body>
+<header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
+<h2 class="cov_title">
+<span>Coverage for "cdefs.h" : </span><span class="cov_high">100.00%</span>
+</h2>
+<h4 class="cov_subtitle">(1 of 1 relevant lines covered)</h4>
+<h4 class="cov_filepath">../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/sys/cdefs.h</h4>
+<table class="source_code">
+<tr class="never">
+<td class="num">1</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">2</td>
+<td class="src"><pre><code class="objc"> * Copyright (c) 2000-2015 Apple Inc. All rights reserved.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">3</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">4</td>
+<td class="src"><pre><code class="objc"> * @APPLE_OSREFERENCE_LICENSE_HEADER_START@</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">5</td>
+<td class="src"><pre><code class="objc"> * </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">6</td>
+<td class="src"><pre><code class="objc"> * This file contains Original Code and/or Modifications of Original Code</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">7</td>
+<td class="src"><pre><code class="objc"> * as defined in and that are subject to the Apple Public Source License</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">8</td>
+<td class="src"><pre><code class="objc"> * Version 2.0 (the 'License'). You may not use this file except in</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">9</td>
+<td class="src"><pre><code class="objc"> * compliance with the License. The rights granted to you under the License</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">10</td>
+<td class="src"><pre><code class="objc"> * may not be used to create, or enable the creation or redistribution of,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">11</td>
+<td class="src"><pre><code class="objc"> * unlawful or unlicensed copies of an Apple operating system, or to</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">12</td>
+<td class="src"><pre><code class="objc"> * circumvent, violate, or enable the circumvention or violation of, any</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">13</td>
+<td class="src"><pre><code class="objc"> * terms of an Apple operating system software license agreement.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">14</td>
+<td class="src"><pre><code class="objc"> * </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">15</td>
+<td class="src"><pre><code class="objc"> * Please obtain a copy of the License at</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">16</td>
+<td class="src"><pre><code class="objc"> * http://www.opensource.apple.com/apsl/ and read it before using this file.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">17</td>
+<td class="src"><pre><code class="objc"> * </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">18</td>
+<td class="src"><pre><code class="objc"> * The Original Code and all software distributed under the License are</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">19</td>
+<td class="src"><pre><code class="objc"> * distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, EITHER</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">20</td>
+<td class="src"><pre><code class="objc"> * EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">21</td>
+<td class="src"><pre><code class="objc"> * INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">22</td>
+<td class="src"><pre><code class="objc"> * FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">23</td>
+<td class="src"><pre><code class="objc"> * Please see the License for the specific language governing rights and</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">24</td>
+<td class="src"><pre><code class="objc"> * limitations under the License.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">25</td>
+<td class="src"><pre><code class="objc"> * </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">26</td>
+<td class="src"><pre><code class="objc"> * @APPLE_OSREFERENCE_LICENSE_HEADER_END@</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">27</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">28</td>
+<td class="src"><pre><code class="objc">/* Copyright 1995 NeXT Computer, Inc. All rights reserved. */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">29</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">30</td>
+<td class="src"><pre><code class="objc"> * Copyright (c) 1991, 1993</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">31</td>
+<td class="src"><pre><code class="objc"> *	The Regents of the University of California.  All rights reserved.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">32</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">33</td>
+<td class="src"><pre><code class="objc"> * This code is derived from software contributed to Berkeley by</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">34</td>
+<td class="src"><pre><code class="objc"> * Berkeley Software Design, Inc.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">35</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">36</td>
+<td class="src"><pre><code class="objc"> * Redistribution and use in source and binary forms, with or without</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">37</td>
+<td class="src"><pre><code class="objc"> * modification, are permitted provided that the following conditions</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">38</td>
+<td class="src"><pre><code class="objc"> * are met:</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">39</td>
+<td class="src"><pre><code class="objc"> * 1. Redistributions of source code must retain the above copyright</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">40</td>
+<td class="src"><pre><code class="objc"> *    notice, this list of conditions and the following disclaimer.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">41</td>
+<td class="src"><pre><code class="objc"> * 2. Redistributions in binary form must reproduce the above copyright</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">42</td>
+<td class="src"><pre><code class="objc"> *    notice, this list of conditions and the following disclaimer in the</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">43</td>
+<td class="src"><pre><code class="objc"> *    documentation and/or other materials provided with the distribution.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">44</td>
+<td class="src"><pre><code class="objc"> * 3. All advertising materials mentioning features or use of this software</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">45</td>
+<td class="src"><pre><code class="objc"> *    must display the following acknowledgement:</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">46</td>
+<td class="src"><pre><code class="objc"> *	This product includes software developed by the University of</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">47</td>
+<td class="src"><pre><code class="objc"> *	California, Berkeley and its contributors.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">48</td>
+<td class="src"><pre><code class="objc"> * 4. Neither the name of the University nor the names of its contributors</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">49</td>
+<td class="src"><pre><code class="objc"> *    may be used to endorse or promote products derived from this software</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">50</td>
+<td class="src"><pre><code class="objc"> *    without specific prior written permission.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">51</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">52</td>
+<td class="src"><pre><code class="objc"> * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">53</td>
+<td class="src"><pre><code class="objc"> * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">54</td>
+<td class="src"><pre><code class="objc"> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">55</td>
+<td class="src"><pre><code class="objc"> * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">56</td>
+<td class="src"><pre><code class="objc"> * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">57</td>
+<td class="src"><pre><code class="objc"> * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">58</td>
+<td class="src"><pre><code class="objc"> * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">59</td>
+<td class="src"><pre><code class="objc"> * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">60</td>
+<td class="src"><pre><code class="objc"> * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">61</td>
+<td class="src"><pre><code class="objc"> * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">62</td>
+<td class="src"><pre><code class="objc"> * SUCH DAMAGE.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">63</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">64</td>
+<td class="src"><pre><code class="objc"> *	@(#)cdefs.h	8.8 (Berkeley) 1/9/95</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">65</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">66</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">67</td>
+<td class="src"><pre><code class="objc">#ifndef	_CDEFS_H_</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">68</td>
+<td class="src"><pre><code class="objc">#define	_CDEFS_H_</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">69</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">70</td>
+<td class="src"><pre><code class="objc">#if defined(__cplusplus)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">71</td>
+<td class="src"><pre><code class="objc">#define	__BEGIN_DECLS	extern "C" {</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">72</td>
+<td class="src"><pre><code class="objc">#define	__END_DECLS	}</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">73</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">74</td>
+<td class="src"><pre><code class="objc">#define	__BEGIN_DECLS</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">75</td>
+<td class="src"><pre><code class="objc">#define	__END_DECLS</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">76</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">77</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">78</td>
+<td class="src"><pre><code class="objc">/* This SDK is designed to work with clang and specific versions of</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">79</td>
+<td class="src"><pre><code class="objc"> * gcc &gt;= 4.0 with Apple's patch sets */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">80</td>
+<td class="src"><pre><code class="objc">#if !defined(__GNUC__) || __GNUC__ &lt; 4</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">81</td>
+<td class="src"><pre><code class="objc">#warning "Unsupported compiler detected"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">82</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">83</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">84</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">85</td>
+<td class="src"><pre><code class="objc"> * Compatibility with compilers and environments that don't support compiler</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">86</td>
+<td class="src"><pre><code class="objc"> * feature checking function-like macros.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">87</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">88</td>
+<td class="src"><pre><code class="objc">#ifndef __has_builtin</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">89</td>
+<td class="src"><pre><code class="objc">#define __has_builtin(x) 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">90</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">91</td>
+<td class="src"><pre><code class="objc">#ifndef __has_include</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">92</td>
+<td class="src"><pre><code class="objc">#define __has_include(x) 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">93</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">94</td>
+<td class="src"><pre><code class="objc">#ifndef __has_feature</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">95</td>
+<td class="src"><pre><code class="objc">#define __has_feature(x) 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">96</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">97</td>
+<td class="src"><pre><code class="objc">#ifndef __has_attribute</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">98</td>
+<td class="src"><pre><code class="objc">#define __has_attribute(x) 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">99</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">100</td>
+<td class="src"><pre><code class="objc">#ifndef __has_extension</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">101</td>
+<td class="src"><pre><code class="objc">#define __has_extension(x) 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">102</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">103</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">104</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">105</td>
+<td class="src"><pre><code class="objc"> * The __CONCAT macro is used to concatenate parts of symbol names, e.g.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">106</td>
+<td class="src"><pre><code class="objc"> * with "#define OLD(foo) __CONCAT(old,foo)", OLD(foo) produces oldfoo.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">107</td>
+<td class="src"><pre><code class="objc"> * The __CONCAT macro is a bit tricky -- make sure you don't put spaces</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">108</td>
+<td class="src"><pre><code class="objc"> * in between its arguments.  __CONCAT can also concatenate double-quoted</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">109</td>
+<td class="src"><pre><code class="objc"> * strings produced by the __STRING macro, but this only works with ANSI C.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">110</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">111</td>
+<td class="src"><pre><code class="objc">#if defined(__STDC__) || defined(__cplusplus)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">112</td>
+<td class="src"><pre><code class="objc">#define	__P(protos)	protos		/* full-blown ANSI C */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">113</td>
+<td class="src"><pre><code class="objc">#define	__CONCAT(x,y)	x ## y</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">114</td>
+<td class="src"><pre><code class="objc">#define	__STRING(x)	#x</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">115</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">116</td>
+<td class="src"><pre><code class="objc">#define	__const		const		/* define reserved names to standard */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">117</td>
+<td class="src"><pre><code class="objc">#define	__signed	signed</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">118</td>
+<td class="src"><pre><code class="objc">#define	__volatile	volatile</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">119</td>
+<td class="src"><pre><code class="objc">#if defined(__cplusplus)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">120</td>
+<td class="src"><pre><code class="objc">#define	__inline	inline		/* convert to C++ keyword */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">121</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">122</td>
+<td class="src"><pre><code class="objc">#ifndef __GNUC__</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">123</td>
+<td class="src"><pre><code class="objc">#define	__inline			/* delete GCC keyword */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">124</td>
+<td class="src"><pre><code class="objc">#endif /* !__GNUC__ */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">125</td>
+<td class="src"><pre><code class="objc">#endif /* !__cplusplus */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">126</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">127</td>
+<td class="src"><pre><code class="objc">#else	/* !(__STDC__ || __cplusplus) */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">128</td>
+<td class="src"><pre><code class="objc">#define	__P(protos)	()		/* traditional C preprocessor */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">129</td>
+<td class="src"><pre><code class="objc">#define	__CONCAT(x,y)	x/**/y</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">130</td>
+<td class="src"><pre><code class="objc">#define	__STRING(x)	"x"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">131</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">132</td>
+<td class="src"><pre><code class="objc">#ifndef __GNUC__</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">133</td>
+<td class="src"><pre><code class="objc">#define	__const				/* delete pseudo-ANSI C keywords */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">134</td>
+<td class="src"><pre><code class="objc">#define	__inline</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">135</td>
+<td class="src"><pre><code class="objc">#define	__signed</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">136</td>
+<td class="src"><pre><code class="objc">#define	__volatile</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">137</td>
+<td class="src"><pre><code class="objc">#endif	/* !__GNUC__ */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">138</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">139</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">140</td>
+<td class="src"><pre><code class="objc"> * In non-ANSI C environments, new programs will want ANSI-only C keywords</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">141</td>
+<td class="src"><pre><code class="objc"> * deleted from the program and old programs will want them left alone.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">142</td>
+<td class="src"><pre><code class="objc"> * When using a compiler other than gcc, programs using the ANSI C keywords</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">143</td>
+<td class="src"><pre><code class="objc"> * const, inline etc. as normal identifiers should define -DNO_ANSI_KEYWORDS.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">144</td>
+<td class="src"><pre><code class="objc"> * When using "gcc -traditional", we assume that this is the intent; if</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">145</td>
+<td class="src"><pre><code class="objc"> * __GNUC__ is defined but __STDC__ is not, we leave the new keywords alone.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">146</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">147</td>
+<td class="src"><pre><code class="objc">#ifndef	NO_ANSI_KEYWORDS</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">148</td>
+<td class="src"><pre><code class="objc">#define	const		__const			/* convert ANSI C keywords */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">149</td>
+<td class="src"><pre><code class="objc">#define	inline		__inline</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">150</td>
+<td class="src"><pre><code class="objc">#define	signed		__signed</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">151</td>
+<td class="src"><pre><code class="objc">#define	volatile	__volatile</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">152</td>
+<td class="src"><pre><code class="objc">#endif /* !NO_ANSI_KEYWORDS */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">153</td>
+<td class="src"><pre><code class="objc">#endif /* !(__STDC__ || __cplusplus) */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">154</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">155</td>
+<td class="src"><pre><code class="objc">#define __dead2		__attribute__((noreturn))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">156</td>
+<td class="src"><pre><code class="objc">#define __pure2		__attribute__((const))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">157</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">158</td>
+<td class="src"><pre><code class="objc">/* __unused denotes variables and functions that may not be used, preventing</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">159</td>
+<td class="src"><pre><code class="objc"> * the compiler from warning about it if not used.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">160</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">161</td>
+<td class="src"><pre><code class="objc">#define __unused	__attribute__((unused))</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="never">
+<td class="num">162</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">163</td>
+<td class="src"><pre><code class="objc">/* __used forces variables and functions to be included even if it appears</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">164</td>
+<td class="src"><pre><code class="objc"> * to the compiler that they are not used (and would thust be discarded).</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">165</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">166</td>
+<td class="src"><pre><code class="objc">#define __used		__attribute__((used))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">167</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">168</td>
+<td class="src"><pre><code class="objc">/* __deprecated causes the compiler to produce a warning when encountering</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">169</td>
+<td class="src"><pre><code class="objc"> * code using the deprecated functionality.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">170</td>
+<td class="src"><pre><code class="objc"> * __deprecated_msg() does the same, and compilers that support it will print</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">171</td>
+<td class="src"><pre><code class="objc"> * a message along with the deprecation warning.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">172</td>
+<td class="src"><pre><code class="objc"> * This may require turning on such warning with the -Wdeprecated flag.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">173</td>
+<td class="src"><pre><code class="objc"> * __deprecated_enum_msg() should be used on enums, and compilers that support</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">174</td>
+<td class="src"><pre><code class="objc"> * it will print the deprecation warning.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">175</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">176</td>
+<td class="src"><pre><code class="objc">#define __deprecated	__attribute__((deprecated))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">177</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">178</td>
+<td class="src"><pre><code class="objc">#if __has_extension(attribute_deprecated_with_message) || \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">179</td>
+<td class="src"><pre><code class="objc">		(defined(__GNUC__) &amp;&amp; ((__GNUC__ &gt;= 5) || ((__GNUC__ == 4) &amp;&amp; (__GNUC_MINOR__ &gt;= 5))))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">180</td>
+<td class="src"><pre><code class="objc">	#define __deprecated_msg(_msg) __attribute__((deprecated(_msg)))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">181</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">182</td>
+<td class="src"><pre><code class="objc">	#define __deprecated_msg(_msg) __attribute__((deprecated))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">183</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">184</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">185</td>
+<td class="src"><pre><code class="objc">#if __has_extension(enumerator_attributes)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">186</td>
+<td class="src"><pre><code class="objc">	#define __deprecated_enum_msg(_msg) __deprecated_msg(_msg)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">187</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">188</td>
+<td class="src"><pre><code class="objc">	#define __deprecated_enum_msg(_msg)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">189</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">190</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">191</td>
+<td class="src"><pre><code class="objc">/* __unavailable causes the compiler to error out when encountering</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">192</td>
+<td class="src"><pre><code class="objc"> * code using the tagged function of variable.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">193</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">194</td>
+<td class="src"><pre><code class="objc">#define __unavailable	__attribute__((unavailable))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">195</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">196</td>
+<td class="src"><pre><code class="objc">/* Delete pseudo-keywords wherever they are not available or needed. */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">197</td>
+<td class="src"><pre><code class="objc">#ifndef __dead</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">198</td>
+<td class="src"><pre><code class="objc">#define	__dead</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">199</td>
+<td class="src"><pre><code class="objc">#define	__pure</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">200</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">201</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">202</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">203</td>
+<td class="src"><pre><code class="objc"> * We use `__restrict' as a way to define the `restrict' type qualifier</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">204</td>
+<td class="src"><pre><code class="objc"> * without disturbing older software that is unaware of C99 keywords.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">205</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">206</td>
+<td class="src"><pre><code class="objc">#if __STDC_VERSION__ &lt; 199901</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">207</td>
+<td class="src"><pre><code class="objc">#define __restrict</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">208</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">209</td>
+<td class="src"><pre><code class="objc">#define __restrict	restrict</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">210</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">211</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">212</td>
+<td class="src"><pre><code class="objc">/* Compatibility with compilers and environments that don't support the</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">213</td>
+<td class="src"><pre><code class="objc"> * nullability feature.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">214</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">215</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">216</td>
+<td class="src"><pre><code class="objc">#if !__has_feature(nullability)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">217</td>
+<td class="src"><pre><code class="objc">#ifndef __nullable</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">218</td>
+<td class="src"><pre><code class="objc">#define __nullable</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">219</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">220</td>
+<td class="src"><pre><code class="objc">#ifndef __nonnull</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">221</td>
+<td class="src"><pre><code class="objc">#define __nonnull</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">222</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">223</td>
+<td class="src"><pre><code class="objc">#ifndef __null_unspecified</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">224</td>
+<td class="src"><pre><code class="objc">#define __null_unspecified</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">225</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">226</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">227</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">228</td>
+<td class="src"><pre><code class="objc">/* Declaring inline functions within headers is error-prone due to differences</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">229</td>
+<td class="src"><pre><code class="objc"> * across various versions of the C language and extensions.  __header_inline</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">230</td>
+<td class="src"><pre><code class="objc"> * can be used to declare inline functions within system headers.  In cases</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">231</td>
+<td class="src"><pre><code class="objc"> * where you want to force inlining instead of letting the compiler make</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">232</td>
+<td class="src"><pre><code class="objc"> * the decision, you can use __header_always_inline.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">233</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">234</td>
+<td class="src"><pre><code class="objc"> * Be aware that using inline for functions which compilers may also provide</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">235</td>
+<td class="src"><pre><code class="objc"> * builtins can behave differently under various compilers.  If you intend to</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">236</td>
+<td class="src"><pre><code class="objc"> * provide an inline version of such a function, you may want to use a macro</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">237</td>
+<td class="src"><pre><code class="objc"> * instead.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">238</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">239</td>
+<td class="src"><pre><code class="objc"> * The check for !__GNUC__ || __clang__ is because gcc doesn't correctly</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">240</td>
+<td class="src"><pre><code class="objc"> * support c99 inline in some cases:</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">241</td>
+<td class="src"><pre><code class="objc"> * http://gcc.gnu.org/bugzilla/show_bug.cgi?id=55965</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">242</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">243</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">244</td>
+<td class="src"><pre><code class="objc">#if defined(__cplusplus) || \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">245</td>
+<td class="src"><pre><code class="objc">    (__STDC_VERSION__ &gt;= 199901L &amp;&amp; \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">246</td>
+<td class="src"><pre><code class="objc">     !defined(__GNUC_GNU_INLINE__) &amp;&amp; \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">247</td>
+<td class="src"><pre><code class="objc">     (!defined(__GNUC__) || defined(__clang__)))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">248</td>
+<td class="src"><pre><code class="objc"># define __header_inline           inline</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">249</td>
+<td class="src"><pre><code class="objc">#elif defined(__GNUC__) &amp;&amp; defined(__GNUC_STDC_INLINE__)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">250</td>
+<td class="src"><pre><code class="objc"># define __header_inline           extern __inline __attribute__((__gnu_inline__))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">251</td>
+<td class="src"><pre><code class="objc">#elif defined(__GNUC__)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">252</td>
+<td class="src"><pre><code class="objc"># define __header_inline           extern __inline</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">253</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">254</td>
+<td class="src"><pre><code class="objc">  /* If we land here, we've encountered an unsupported compiler,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">255</td>
+<td class="src"><pre><code class="objc">   * so hopefully it understands static __inline as a fallback.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">256</td>
+<td class="src"><pre><code class="objc">   */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">257</td>
+<td class="src"><pre><code class="objc"># define __header_inline           static __inline</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">258</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">259</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">260</td>
+<td class="src"><pre><code class="objc">#ifdef __GNUC__</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">261</td>
+<td class="src"><pre><code class="objc"># define __header_always_inline    __header_inline __attribute__ ((__always_inline__))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">262</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">263</td>
+<td class="src"><pre><code class="objc">  /* Unfortunately, we're using a compiler that we don't know how to force to</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">264</td>
+<td class="src"><pre><code class="objc">   * inline.  Oh well.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">265</td>
+<td class="src"><pre><code class="objc">   */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">266</td>
+<td class="src"><pre><code class="objc"># define __header_always_inline    __header_inline</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">267</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">268</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">269</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">270</td>
+<td class="src"><pre><code class="objc"> * Compiler-dependent macros that bracket portions of code where the</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">271</td>
+<td class="src"><pre><code class="objc"> * "-Wunreachable-code" warning should be ignored. Please use sparingly.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">272</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">273</td>
+<td class="src"><pre><code class="objc">#if defined(__clang__)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">274</td>
+<td class="src"><pre><code class="objc"># define __unreachable_ok_push \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">275</td>
+<td class="src"><pre><code class="objc">         _Pragma("clang diagnostic push") \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">276</td>
+<td class="src"><pre><code class="objc">         _Pragma("clang diagnostic ignored \"-Wunreachable-code\"")</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">277</td>
+<td class="src"><pre><code class="objc"># define __unreachable_ok_pop \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">278</td>
+<td class="src"><pre><code class="objc">         _Pragma("clang diagnostic pop")</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">279</td>
+<td class="src"><pre><code class="objc">#elif defined(__GNUC__) &amp;&amp; ((__GNUC__ &gt; 4) || (__GNUC__ == 4 &amp;&amp; __GNUC_MINOR__ &gt;= 6))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">280</td>
+<td class="src"><pre><code class="objc"># define __unreachable_ok_push \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">281</td>
+<td class="src"><pre><code class="objc">         _Pragma("GCC diagnostic push") \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">282</td>
+<td class="src"><pre><code class="objc">         _Pragma("GCC diagnostic ignored \"-Wunreachable-code\"")</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">283</td>
+<td class="src"><pre><code class="objc"># define __unreachable_ok_pop \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">284</td>
+<td class="src"><pre><code class="objc">         _Pragma("GCC diagnostic pop")</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">285</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">286</td>
+<td class="src"><pre><code class="objc"># define __unreachable_ok_push</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">287</td>
+<td class="src"><pre><code class="objc"># define __unreachable_ok_pop</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">288</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">289</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">290</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">291</td>
+<td class="src"><pre><code class="objc"> * Compiler-dependent macros to declare that functions take printf-like</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">292</td>
+<td class="src"><pre><code class="objc"> * or scanf-like arguments.  They are null except for versions of gcc</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">293</td>
+<td class="src"><pre><code class="objc"> * that are known to support the features properly.  Functions declared</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">294</td>
+<td class="src"><pre><code class="objc"> * with these attributes will cause compilation warnings if there is a</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">295</td>
+<td class="src"><pre><code class="objc"> * mismatch between the format string and subsequent function parameter</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">296</td>
+<td class="src"><pre><code class="objc"> * types.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">297</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">298</td>
+<td class="src"><pre><code class="objc">#define __printflike(fmtarg, firstvararg) \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">299</td>
+<td class="src"><pre><code class="objc">		__attribute__((__format__ (__printf__, fmtarg, firstvararg)))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">300</td>
+<td class="src"><pre><code class="objc">#define __scanflike(fmtarg, firstvararg) \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">301</td>
+<td class="src"><pre><code class="objc">		__attribute__((__format__ (__scanf__, fmtarg, firstvararg)))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">302</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">303</td>
+<td class="src"><pre><code class="objc">#define __IDSTRING(name,string) static const char name[] __used = string</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">304</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">305</td>
+<td class="src"><pre><code class="objc">#ifndef __COPYRIGHT</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">306</td>
+<td class="src"><pre><code class="objc">#define __COPYRIGHT(s) __IDSTRING(copyright,s)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">307</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">308</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">309</td>
+<td class="src"><pre><code class="objc">#ifndef __RCSID</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">310</td>
+<td class="src"><pre><code class="objc">#define __RCSID(s) __IDSTRING(rcsid,s)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">311</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">312</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">313</td>
+<td class="src"><pre><code class="objc">#ifndef __SCCSID</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">314</td>
+<td class="src"><pre><code class="objc">#define __SCCSID(s) __IDSTRING(sccsid,s)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">315</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">316</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">317</td>
+<td class="src"><pre><code class="objc">#ifndef __PROJECT_VERSION</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">318</td>
+<td class="src"><pre><code class="objc">#define __PROJECT_VERSION(s) __IDSTRING(project_version,s)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">319</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">320</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">321</td>
+<td class="src"><pre><code class="objc">/* Source compatibility only, ID string not emitted in object file */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">322</td>
+<td class="src"><pre><code class="objc">#ifndef __FBSDID</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">323</td>
+<td class="src"><pre><code class="objc">#define __FBSDID(s) </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">324</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">325</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">326</td>
+<td class="src"><pre><code class="objc">#ifndef	__DECONST</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">327</td>
+<td class="src"><pre><code class="objc">#define	__DECONST(type, var)	__CAST_AWAY_QUALIFIER(var, const, type)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">328</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">329</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">330</td>
+<td class="src"><pre><code class="objc">#ifndef	__DEVOLATILE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">331</td>
+<td class="src"><pre><code class="objc">#define	__DEVOLATILE(type, var)	__CAST_AWAY_QUALIFIER(var, volatile, type)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">332</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">333</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">334</td>
+<td class="src"><pre><code class="objc">#ifndef	__DEQUALIFY</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">335</td>
+<td class="src"><pre><code class="objc">#define	__DEQUALIFY(type, var)	__CAST_AWAY_QUALIFIER(var, const volatile, type)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">336</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">337</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">338</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">339</td>
+<td class="src"><pre><code class="objc"> * COMPILATION ENVIRONMENTS -- see compat(5) for additional detail</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">340</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">341</td>
+<td class="src"><pre><code class="objc"> * DEFAULT	By default newly complied code will get POSIX APIs plus</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">342</td>
+<td class="src"><pre><code class="objc"> *		Apple API extensions in scope.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">343</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">344</td>
+<td class="src"><pre><code class="objc"> *		Most users will use this compilation environment to avoid</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">345</td>
+<td class="src"><pre><code class="objc"> *		behavioral differences between 32 and 64 bit code.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">346</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">347</td>
+<td class="src"><pre><code class="objc"> * LEGACY	Defining _NONSTD_SOURCE will get pre-POSIX APIs plus Apple</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">348</td>
+<td class="src"><pre><code class="objc"> *		API extensions in scope.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">349</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">350</td>
+<td class="src"><pre><code class="objc"> *		This is generally equivalent to the Tiger release compilation</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">351</td>
+<td class="src"><pre><code class="objc"> *		environment, except that it cannot be applied to 64 bit code;</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">352</td>
+<td class="src"><pre><code class="objc"> *		its use is discouraged.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">353</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">354</td>
+<td class="src"><pre><code class="objc"> *		We expect this environment to be deprecated in the future.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">355</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">356</td>
+<td class="src"><pre><code class="objc"> * STRICT	Defining _POSIX_C_SOURCE or _XOPEN_SOURCE restricts the</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">357</td>
+<td class="src"><pre><code class="objc"> *		available APIs to exactly the set of APIs defined by the</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">358</td>
+<td class="src"><pre><code class="objc"> *		corresponding standard, based on the value defined.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">359</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">360</td>
+<td class="src"><pre><code class="objc"> *		A correct, portable definition for _POSIX_C_SOURCE is 200112L.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">361</td>
+<td class="src"><pre><code class="objc"> *		A correct, portable definition for _XOPEN_SOURCE is 600L.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">362</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">363</td>
+<td class="src"><pre><code class="objc"> *		Apple API extensions are not visible in this environment,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">364</td>
+<td class="src"><pre><code class="objc"> *		which can cause Apple specific code to fail to compile,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">365</td>
+<td class="src"><pre><code class="objc"> *		or behave incorrectly if prototypes are not in scope or</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">366</td>
+<td class="src"><pre><code class="objc"> *		warnings about missing prototypes are not enabled or ignored.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">367</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">368</td>
+<td class="src"><pre><code class="objc"> * In any compilation environment, for correct symbol resolution to occur,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">369</td>
+<td class="src"><pre><code class="objc"> * function prototypes must be in scope.  It is recommended that all Apple</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">370</td>
+<td class="src"><pre><code class="objc"> * tools users add either the "-Wall" or "-Wimplicit-function-declaration"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">371</td>
+<td class="src"><pre><code class="objc"> * compiler flags to their projects to be warned when a function is being</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">372</td>
+<td class="src"><pre><code class="objc"> * used without a prototype in scope.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">373</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">374</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">375</td>
+<td class="src"><pre><code class="objc">/* These settings are particular to each product. */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">376</td>
+<td class="src"><pre><code class="objc">/* Platform: iPhoneSimulator */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">377</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ONLY_64_BIT_INO_T	1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">378</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ONLY_UNIX_CONFORMANCE	1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">379</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ONLY_VERS_1050		1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">380</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">381</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">382</td>
+<td class="src"><pre><code class="objc"> * The __DARWIN_ALIAS macros are used to do symbol renaming; they allow</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">383</td>
+<td class="src"><pre><code class="objc"> * legacy code to use the old symbol, thus maintaining binary compatibility</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">384</td>
+<td class="src"><pre><code class="objc"> * while new code can use a standards compliant version of the same function.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">385</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">386</td>
+<td class="src"><pre><code class="objc"> * __DARWIN_ALIAS is used by itself if the function signature has not</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">387</td>
+<td class="src"><pre><code class="objc"> * changed, it is used along with a #ifdef check for __DARWIN_UNIX03</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">388</td>
+<td class="src"><pre><code class="objc"> * if the signature has changed.  Because the __LP64__ environment</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">389</td>
+<td class="src"><pre><code class="objc"> * only supports UNIX03 semantics it causes __DARWIN_UNIX03 to be</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">390</td>
+<td class="src"><pre><code class="objc"> * defined, but causes __DARWIN_ALIAS to do no symbol mangling.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">391</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">392</td>
+<td class="src"><pre><code class="objc"> * As a special case, when XCode is used to target a specific version of the</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">393</td>
+<td class="src"><pre><code class="objc"> * OS, the manifest constant __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">394</td>
+<td class="src"><pre><code class="objc"> * will be defined by the compiler, with the digits representing major version</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">395</td>
+<td class="src"><pre><code class="objc"> * time 100 + minor version times 10 (e.g. 10.5 := 1050).  If we are targeting</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">396</td>
+<td class="src"><pre><code class="objc"> * pre-10.5, and it is the default compilation environment, revert the</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">397</td>
+<td class="src"><pre><code class="objc"> * compilation environment to pre-__DARWIN_UNIX03.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">398</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">399</td>
+<td class="src"><pre><code class="objc">#if !defined(__DARWIN_ONLY_UNIX_CONFORMANCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">400</td>
+<td class="src"><pre><code class="objc">#  if defined(__LP64__)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">401</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_ONLY_UNIX_CONFORMANCE 1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">402</td>
+<td class="src"><pre><code class="objc">#  else /* !__LP64__ */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">403</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_ONLY_UNIX_CONFORMANCE 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">404</td>
+<td class="src"><pre><code class="objc">#  endif /* __LP64__ */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">405</td>
+<td class="src"><pre><code class="objc">#endif /* !__DARWIN_ONLY_UNIX_CONFORMANCE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">406</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">407</td>
+<td class="src"><pre><code class="objc">#if !defined(__DARWIN_UNIX03)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">408</td>
+<td class="src"><pre><code class="objc">#  if   __DARWIN_ONLY_UNIX_CONFORMANCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">409</td>
+<td class="src"><pre><code class="objc">#    if defined(_NONSTD_SOURCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">410</td>
+<td class="src"><pre><code class="objc">#      error "Can't define _NONSTD_SOURCE when only UNIX conformance is available."</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">411</td>
+<td class="src"><pre><code class="objc">#    endif /* _NONSTD_SOURCE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">412</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_UNIX03	1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">413</td>
+<td class="src"><pre><code class="objc">#  elif defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) &amp;&amp; ((__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__-0) &lt; 1040)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">414</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_UNIX03	0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">415</td>
+<td class="src"><pre><code class="objc">#  elif defined(_DARWIN_C_SOURCE) || defined(_XOPEN_SOURCE) || defined(_POSIX_C_SOURCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">416</td>
+<td class="src"><pre><code class="objc">#    if defined(_NONSTD_SOURCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">417</td>
+<td class="src"><pre><code class="objc">#      error "Can't define both _NONSTD_SOURCE and any of _DARWIN_C_SOURCE, _XOPEN_SOURCE or _POSIX_C_SOURCE."</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">418</td>
+<td class="src"><pre><code class="objc">#    endif /* _NONSTD_SOURCE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">419</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_UNIX03	1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">420</td>
+<td class="src"><pre><code class="objc">#  elif defined(_NONSTD_SOURCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">421</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_UNIX03	0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">422</td>
+<td class="src"><pre><code class="objc">#  else /* default */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">423</td>
+<td class="src"><pre><code class="objc">#    if defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) &amp;&amp; ((__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__-0) &lt; 1050)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">424</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_UNIX03	0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">425</td>
+<td class="src"><pre><code class="objc">#    else /* __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ &gt;= 1050 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">426</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_UNIX03	1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">427</td>
+<td class="src"><pre><code class="objc">#    endif /* __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ &gt;= 1050 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">428</td>
+<td class="src"><pre><code class="objc">#  endif /* _DARWIN_C_SOURCE || _XOPEN_SOURCE || _POSIX_C_SOURCE || __LP64__ */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">429</td>
+<td class="src"><pre><code class="objc">#endif /* !__DARWIN_UNIX03 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">430</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">431</td>
+<td class="src"><pre><code class="objc">#if !defined(__DARWIN_64_BIT_INO_T)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">432</td>
+<td class="src"><pre><code class="objc">#  if   defined(_DARWIN_USE_64_BIT_INODE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">433</td>
+<td class="src"><pre><code class="objc">#    if defined(_DARWIN_NO_64_BIT_INODE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">434</td>
+<td class="src"><pre><code class="objc">#      error "Can't define both _DARWIN_USE_64_BIT_INODE and _DARWIN_NO_64_BIT_INODE."</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">435</td>
+<td class="src"><pre><code class="objc">#    endif /* _DARWIN_NO_64_BIT_INODE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">436</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_64_BIT_INO_T 1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">437</td>
+<td class="src"><pre><code class="objc">#  elif defined(_DARWIN_NO_64_BIT_INODE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">438</td>
+<td class="src"><pre><code class="objc">#    if __DARWIN_ONLY_64_BIT_INO_T</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">439</td>
+<td class="src"><pre><code class="objc">#      error "Can't define _DARWIN_NO_64_BIT_INODE when only 64-bit inodes are available."</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">440</td>
+<td class="src"><pre><code class="objc">#    endif /* __DARWIN_ONLY_64_BIT_INO_T */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">441</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_64_BIT_INO_T 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">442</td>
+<td class="src"><pre><code class="objc">#  else /* default */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">443</td>
+<td class="src"><pre><code class="objc">#    if __DARWIN_ONLY_64_BIT_INO_T</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">444</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_64_BIT_INO_T 1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">445</td>
+<td class="src"><pre><code class="objc">#    elif defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) &amp;&amp; ((__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__-0) &lt; 1060) || __DARWIN_UNIX03 == 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">446</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_64_BIT_INO_T 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">447</td>
+<td class="src"><pre><code class="objc">#    else /* default */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">448</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_64_BIT_INO_T 1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">449</td>
+<td class="src"><pre><code class="objc">#    endif /* __DARWIN_ONLY_64_BIT_INO_T */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">450</td>
+<td class="src"><pre><code class="objc">#  endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">451</td>
+<td class="src"><pre><code class="objc">#endif /* !__DARWIN_64_BIT_INO_T */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">452</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">453</td>
+<td class="src"><pre><code class="objc">#if !defined(__DARWIN_VERS_1050)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">454</td>
+<td class="src"><pre><code class="objc">#  if   __DARWIN_ONLY_VERS_1050</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">455</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_VERS_1050 1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">456</td>
+<td class="src"><pre><code class="objc">#  elif defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__) &amp;&amp; ((__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__-0) &lt; 1050) || __DARWIN_UNIX03 == 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">457</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_VERS_1050 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">458</td>
+<td class="src"><pre><code class="objc">#  else /* default */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">459</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_VERS_1050 1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">460</td>
+<td class="src"><pre><code class="objc">#  endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">461</td>
+<td class="src"><pre><code class="objc">#endif /* !__DARWIN_VERS_1050 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">462</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">463</td>
+<td class="src"><pre><code class="objc">#if !defined(__DARWIN_NON_CANCELABLE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">464</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_NON_CANCELABLE 0</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">465</td>
+<td class="src"><pre><code class="objc">#endif /* !__DARWIN_NON_CANCELABLE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">466</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">467</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">468</td>
+<td class="src"><pre><code class="objc"> * symbol suffixes used for symbol versioning</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">469</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">470</td>
+<td class="src"><pre><code class="objc">#if __DARWIN_UNIX03</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">471</td>
+<td class="src"><pre><code class="objc">#  if __DARWIN_ONLY_UNIX_CONFORMANCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">472</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_SUF_UNIX03		/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">473</td>
+<td class="src"><pre><code class="objc">#  else /* !__DARWIN_ONLY_UNIX_CONFORMANCE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">474</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_SUF_UNIX03		"$UNIX2003"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">475</td>
+<td class="src"><pre><code class="objc">#  endif /* __DARWIN_ONLY_UNIX_CONFORMANCE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">476</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">477</td>
+<td class="src"><pre><code class="objc">#  if __DARWIN_64_BIT_INO_T</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">478</td>
+<td class="src"><pre><code class="objc">#    if __DARWIN_ONLY_64_BIT_INO_T</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">479</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_SUF_64_BIT_INO_T	/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">480</td>
+<td class="src"><pre><code class="objc">#    else /* !__DARWIN_ONLY_64_BIT_INO_T */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">481</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_SUF_64_BIT_INO_T	"$INODE64"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">482</td>
+<td class="src"><pre><code class="objc">#    endif /* __DARWIN_ONLY_64_BIT_INO_T */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">483</td>
+<td class="src"><pre><code class="objc">#  else /* !__DARWIN_64_BIT_INO_T */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">484</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_SUF_64_BIT_INO_T	/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">485</td>
+<td class="src"><pre><code class="objc">#  endif /* __DARWIN_64_BIT_INO_T */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">486</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">487</td>
+<td class="src"><pre><code class="objc">#  if __DARWIN_VERS_1050</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">488</td>
+<td class="src"><pre><code class="objc">#    if __DARWIN_ONLY_VERS_1050</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">489</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_SUF_1050		/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">490</td>
+<td class="src"><pre><code class="objc">#    else /* !__DARWIN_ONLY_VERS_1050 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">491</td>
+<td class="src"><pre><code class="objc">#      define __DARWIN_SUF_1050		"$1050"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">492</td>
+<td class="src"><pre><code class="objc">#    endif /* __DARWIN_ONLY_VERS_1050 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">493</td>
+<td class="src"><pre><code class="objc">#  else /* !__DARWIN_VERS_1050 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">494</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_SUF_1050		/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">495</td>
+<td class="src"><pre><code class="objc">#  endif /* __DARWIN_VERS_1050 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">496</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">497</td>
+<td class="src"><pre><code class="objc">#  if __DARWIN_NON_CANCELABLE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">498</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_SUF_NON_CANCELABLE	"$NOCANCEL"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">499</td>
+<td class="src"><pre><code class="objc">#  else /* !__DARWIN_NON_CANCELABLE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">500</td>
+<td class="src"><pre><code class="objc">#    define __DARWIN_SUF_NON_CANCELABLE	/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">501</td>
+<td class="src"><pre><code class="objc">#  endif /* __DARWIN_NON_CANCELABLE */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">502</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">503</td>
+<td class="src"><pre><code class="objc">#else /* !__DARWIN_UNIX03 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">504</td>
+<td class="src"><pre><code class="objc">#  define __DARWIN_SUF_UNIX03		/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">505</td>
+<td class="src"><pre><code class="objc">#  define __DARWIN_SUF_64_BIT_INO_T	/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">506</td>
+<td class="src"><pre><code class="objc">#  define __DARWIN_SUF_NON_CANCELABLE	/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">507</td>
+<td class="src"><pre><code class="objc">#  define __DARWIN_SUF_1050		/* nothing */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">508</td>
+<td class="src"><pre><code class="objc">#endif /* __DARWIN_UNIX03 */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">509</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">510</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_SUF_EXTSN		"$DARWIN_EXTSN"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">511</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">512</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">513</td>
+<td class="src"><pre><code class="objc"> * symbol versioning macros</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">514</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">515</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ALIAS(sym)		__asm("_" __STRING(sym) __DARWIN_SUF_UNIX03)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">516</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ALIAS_C(sym)		__asm("_" __STRING(sym) __DARWIN_SUF_NON_CANCELABLE __DARWIN_SUF_UNIX03)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">517</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ALIAS_I(sym)		__asm("_" __STRING(sym) __DARWIN_SUF_64_BIT_INO_T __DARWIN_SUF_UNIX03)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">518</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_NOCANCEL(sym)  	__asm("_" __STRING(sym) __DARWIN_SUF_NON_CANCELABLE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">519</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_INODE64(sym)		__asm("_" __STRING(sym) __DARWIN_SUF_64_BIT_INO_T)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">520</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">521</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_1050(sym)		__asm("_" __STRING(sym) __DARWIN_SUF_1050)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">522</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_1050ALIAS(sym)		__asm("_" __STRING(sym) __DARWIN_SUF_1050 __DARWIN_SUF_UNIX03)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">523</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_1050ALIAS_C(sym)	__asm("_" __STRING(sym) __DARWIN_SUF_1050 __DARWIN_SUF_NON_CANCELABLE __DARWIN_SUF_UNIX03)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">524</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_1050ALIAS_I(sym)	__asm("_" __STRING(sym) __DARWIN_SUF_1050 __DARWIN_SUF_64_BIT_INO_T __DARWIN_SUF_UNIX03)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">525</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_1050INODE64(sym)	__asm("_" __STRING(sym) __DARWIN_SUF_1050 __DARWIN_SUF_64_BIT_INO_T)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">526</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">527</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_EXTSN(sym)		__asm("_" __STRING(sym) __DARWIN_SUF_EXTSN)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">528</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_EXTSN_C(sym)		__asm("_" __STRING(sym) __DARWIN_SUF_EXTSN __DARWIN_SUF_NON_CANCELABLE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">529</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">530</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">531</td>
+<td class="src"><pre><code class="objc"> * symbol release macros</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">532</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">533</td>
+<td class="src"><pre><code class="objc">#include &lt;sys/_symbol_aliasing.h&gt;</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">534</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">535</td>
+<td class="src"><pre><code class="objc">#if defined(__ENVIRONMENT_IPHONE_OS_VERSION_MIN_REQUIRED__)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">536</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ALIAS_STARTING(_mac, _iphone, x)   __DARWIN_ALIAS_STARTING_IPHONE_##_iphone(x)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">537</td>
+<td class="src"><pre><code class="objc">#elif defined(__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">538</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ALIAS_STARTING(_mac, _iphone, x)   __DARWIN_ALIAS_STARTING_MAC_##_mac(x)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">539</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">540</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_ALIAS_STARTING(_mac, _iphone, x)   x</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">541</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">542</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">543</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">544</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">545</td>
+<td class="src"><pre><code class="objc"> * POSIX.1 requires that the macros we test be defined before any standard</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">546</td>
+<td class="src"><pre><code class="objc"> * header file is included.  This permits us to convert values for feature</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">547</td>
+<td class="src"><pre><code class="objc"> * testing, as necessary, using only _POSIX_C_SOURCE.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">548</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">549</td>
+<td class="src"><pre><code class="objc"> * Here's a quick run-down of the versions:</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">550</td>
+<td class="src"><pre><code class="objc"> *  defined(_POSIX_SOURCE)		1003.1-1988</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">551</td>
+<td class="src"><pre><code class="objc"> *  _POSIX_C_SOURCE == 1L		1003.1-1990</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">552</td>
+<td class="src"><pre><code class="objc"> *  _POSIX_C_SOURCE == 2L		1003.2-1992 C Language Binding Option</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">553</td>
+<td class="src"><pre><code class="objc"> *  _POSIX_C_SOURCE == 199309L		1003.1b-1993</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">554</td>
+<td class="src"><pre><code class="objc"> *  _POSIX_C_SOURCE == 199506L		1003.1c-1995, 1003.1i-1995,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">555</td>
+<td class="src"><pre><code class="objc"> *					and the omnibus ISO/IEC 9945-1: 1996</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">556</td>
+<td class="src"><pre><code class="objc"> *  _POSIX_C_SOURCE == 200112L		1003.1-2001</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">557</td>
+<td class="src"><pre><code class="objc"> *  _POSIX_C_SOURCE == 200809L		1003.1-2008</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">558</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">559</td>
+<td class="src"><pre><code class="objc"> * In addition, the X/Open Portability Guide, which is now the Single UNIX</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">560</td>
+<td class="src"><pre><code class="objc"> * Specification, defines a feature-test macro which indicates the version of</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">561</td>
+<td class="src"><pre><code class="objc"> * that specification, and which subsumes _POSIX_C_SOURCE.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">562</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">563</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">564</td>
+<td class="src"><pre><code class="objc">/* Deal with IEEE Std. 1003.1-1990, in which _POSIX_C_SOURCE == 1L. */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">565</td>
+<td class="src"><pre><code class="objc">#if defined(_POSIX_C_SOURCE) &amp;&amp; _POSIX_C_SOURCE == 1L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">566</td>
+<td class="src"><pre><code class="objc">#undef _POSIX_C_SOURCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">567</td>
+<td class="src"><pre><code class="objc">#define	_POSIX_C_SOURCE		199009L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">568</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">569</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">570</td>
+<td class="src"><pre><code class="objc">/* Deal with IEEE Std. 1003.2-1992, in which _POSIX_C_SOURCE == 2L. */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">571</td>
+<td class="src"><pre><code class="objc">#if defined(_POSIX_C_SOURCE) &amp;&amp; _POSIX_C_SOURCE == 2L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">572</td>
+<td class="src"><pre><code class="objc">#undef _POSIX_C_SOURCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">573</td>
+<td class="src"><pre><code class="objc">#define	_POSIX_C_SOURCE		199209L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">574</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">575</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">576</td>
+<td class="src"><pre><code class="objc">/* Deal with various X/Open Portability Guides and Single UNIX Spec. */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">577</td>
+<td class="src"><pre><code class="objc">#ifdef _XOPEN_SOURCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">578</td>
+<td class="src"><pre><code class="objc">#if _XOPEN_SOURCE - 0L &gt;= 700L &amp;&amp; (!defined(_POSIX_C_SOURCE) || _POSIX_C_SOURCE - 0L &lt; 200809L)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">579</td>
+<td class="src"><pre><code class="objc">#undef _POSIX_C_SOURCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">580</td>
+<td class="src"><pre><code class="objc">#define _POSIX_C_SOURCE         200809L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">581</td>
+<td class="src"><pre><code class="objc">#elif _XOPEN_SOURCE - 0L &gt;= 600L &amp;&amp; (!defined(_POSIX_C_SOURCE) || _POSIX_C_SOURCE - 0L &lt; 200112L)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">582</td>
+<td class="src"><pre><code class="objc">#undef _POSIX_C_SOURCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">583</td>
+<td class="src"><pre><code class="objc">#define	_POSIX_C_SOURCE		200112L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">584</td>
+<td class="src"><pre><code class="objc">#elif _XOPEN_SOURCE - 0L &gt;= 500L &amp;&amp; (!defined(_POSIX_C_SOURCE) || _POSIX_C_SOURCE - 0L &lt; 199506L)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">585</td>
+<td class="src"><pre><code class="objc">#undef _POSIX_C_SOURCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">586</td>
+<td class="src"><pre><code class="objc">#define	_POSIX_C_SOURCE		199506L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">587</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">588</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">589</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">590</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">591</td>
+<td class="src"><pre><code class="objc"> * Deal with all versions of POSIX.  The ordering relative to the tests above is</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">592</td>
+<td class="src"><pre><code class="objc"> * important.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">593</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">594</td>
+<td class="src"><pre><code class="objc">#if defined(_POSIX_SOURCE) &amp;&amp; !defined(_POSIX_C_SOURCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">595</td>
+<td class="src"><pre><code class="objc">#define _POSIX_C_SOURCE         198808L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">596</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">597</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">598</td>
+<td class="src"><pre><code class="objc">/* POSIX C deprecation macros */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">599</td>
+<td class="src"><pre><code class="objc">#include &lt;sys/_posix_availability.h&gt;</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">600</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">601</td>
+<td class="src"><pre><code class="objc">#define __POSIX_C_DEPRECATED(ver) ___POSIX_C_DEPRECATED_STARTING_##ver</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">602</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">603</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">604</td>
+<td class="src"><pre><code class="objc"> * Set a single macro which will always be defined and can be used to determine</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">605</td>
+<td class="src"><pre><code class="objc"> * the appropriate namespace.  For POSIX, these values will correspond to</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">606</td>
+<td class="src"><pre><code class="objc"> * _POSIX_C_SOURCE value.  Currently there are two additional levels corresponding</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">607</td>
+<td class="src"><pre><code class="objc"> * to ANSI (_ANSI_SOURCE) and Darwin extensions (_DARWIN_C_SOURCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">608</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">609</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_C_ANSI         010000L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">610</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_C_FULL         900000L</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">611</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">612</td>
+<td class="src"><pre><code class="objc">#if   defined(_ANSI_SOURCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">613</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_C_LEVEL        __DARWIN_C_ANSI</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">614</td>
+<td class="src"><pre><code class="objc">#elif defined(_POSIX_C_SOURCE) &amp;&amp; !defined(_DARWIN_C_SOURCE) &amp;&amp; !defined(_NONSTD_SOURCE)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">615</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_C_LEVEL        _POSIX_C_SOURCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">616</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">617</td>
+<td class="src"><pre><code class="objc">#define __DARWIN_C_LEVEL        __DARWIN_C_FULL</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">618</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">619</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">620</td>
+<td class="src"><pre><code class="objc">/* If the developer has neither requested a strict language mode nor a version</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">621</td>
+<td class="src"><pre><code class="objc"> * of POSIX, turn on functionality provided by __STDC_WANT_LIB_EXT1__ as part</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">622</td>
+<td class="src"><pre><code class="objc"> * of __DARWIN_C_FULL.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">623</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">624</td>
+<td class="src"><pre><code class="objc">#if !defined(__STDC_WANT_LIB_EXT1__) &amp;&amp; !defined(__STRICT_ANSI__) &amp;&amp; __DARWIN_C_LEVEL &gt;= __DARWIN_C_FULL</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">625</td>
+<td class="src"><pre><code class="objc">#define __STDC_WANT_LIB_EXT1__ 1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">626</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">627</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">628</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">629</td>
+<td class="src"><pre><code class="objc"> * long long is not supported in c89 (__STRICT_ANSI__), but g++ -ansi and</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">630</td>
+<td class="src"><pre><code class="objc"> * c99 still want long longs.  While not perfect, we allow long longs for</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">631</td>
+<td class="src"><pre><code class="objc"> * g++.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">632</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">633</td>
+<td class="src"><pre><code class="objc">#define	__DARWIN_NO_LONG_LONG	(defined(__STRICT_ANSI__) \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">634</td>
+<td class="src"><pre><code class="objc">				&amp;&amp; (__STDC_VERSION__-0 &lt; 199901L) \</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">635</td>
+<td class="src"><pre><code class="objc">				&amp;&amp; !defined(__GNUG__))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">636</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">637</td>
+<td class="src"><pre><code class="objc">/*****************************************</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">638</td>
+<td class="src"><pre><code class="objc"> *  Public darwin-specific feature macros</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">639</td>
+<td class="src"><pre><code class="objc"> *****************************************/</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">640</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">641</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">642</td>
+<td class="src"><pre><code class="objc"> * _DARWIN_FEATURE_64_BIT_INODE indicates that the ino_t type is 64-bit, and</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">643</td>
+<td class="src"><pre><code class="objc"> * structures modified for 64-bit inodes (like struct stat) will be used.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">644</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">645</td>
+<td class="src"><pre><code class="objc">#if __DARWIN_64_BIT_INO_T</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">646</td>
+<td class="src"><pre><code class="objc">#define _DARWIN_FEATURE_64_BIT_INODE		1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">647</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">648</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">649</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">650</td>
+<td class="src"><pre><code class="objc"> * _DARWIN_FEATURE_64_ONLY_BIT_INODE indicates that the ino_t type may only</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">651</td>
+<td class="src"><pre><code class="objc"> * be 64-bit; there is no support for 32-bit ino_t when this macro is defined</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">652</td>
+<td class="src"><pre><code class="objc"> * (and non-zero).  There is no struct stat64 either, as the regular</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">653</td>
+<td class="src"><pre><code class="objc"> * struct stat will already be the 64-bit version.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">654</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">655</td>
+<td class="src"><pre><code class="objc">#if __DARWIN_ONLY_64_BIT_INO_T</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">656</td>
+<td class="src"><pre><code class="objc">#define _DARWIN_FEATURE_ONLY_64_BIT_INODE	1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">657</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">658</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">659</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">660</td>
+<td class="src"><pre><code class="objc"> * _DARWIN_FEATURE_ONLY_VERS_1050 indicates that only those APIs updated</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">661</td>
+<td class="src"><pre><code class="objc"> * in 10.5 exists; no pre-10.5 variants are available.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">662</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">663</td>
+<td class="src"><pre><code class="objc">#if __DARWIN_ONLY_VERS_1050</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">664</td>
+<td class="src"><pre><code class="objc">#define _DARWIN_FEATURE_ONLY_VERS_1050		1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">665</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">666</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">667</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">668</td>
+<td class="src"><pre><code class="objc"> * _DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE indicates only UNIX conforming API</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">669</td>
+<td class="src"><pre><code class="objc"> * are available (the legacy BSD APIs are not available)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">670</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">671</td>
+<td class="src"><pre><code class="objc">#if __DARWIN_ONLY_UNIX_CONFORMANCE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">672</td>
+<td class="src"><pre><code class="objc">#define _DARWIN_FEATURE_ONLY_UNIX_CONFORMANCE	1</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">673</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">674</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">675</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">676</td>
+<td class="src"><pre><code class="objc"> * _DARWIN_FEATURE_UNIX_CONFORMANCE indicates whether UNIX conformance is on,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">677</td>
+<td class="src"><pre><code class="objc"> * and specifies the conformance level (3 is SUSv3)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">678</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">679</td>
+<td class="src"><pre><code class="objc">#if __DARWIN_UNIX03</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">680</td>
+<td class="src"><pre><code class="objc">#define _DARWIN_FEATURE_UNIX_CONFORMANCE	3</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">681</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">682</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">683</td>
+<td class="src"><pre><code class="objc">/* </code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">684</td>
+<td class="src"><pre><code class="objc"> * This macro casts away the qualifier from the variable</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">685</td>
+<td class="src"><pre><code class="objc"> *</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">686</td>
+<td class="src"><pre><code class="objc"> * Note: use at your own risk, removing qualifiers can result in</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">687</td>
+<td class="src"><pre><code class="objc"> * catastrophic run-time failures.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">688</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">689</td>
+<td class="src"><pre><code class="objc">#ifndef __CAST_AWAY_QUALIFIER</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">690</td>
+<td class="src"><pre><code class="objc">#define __CAST_AWAY_QUALIFIER(variable, qualifier, type)  (type) (long)(variable)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">691</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">692</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">693</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">694</td>
+<td class="src"><pre><code class="objc"> * __XNU_PRIVATE_EXTERN is a linkage decoration indicating that a symbol can be</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">695</td>
+<td class="src"><pre><code class="objc"> * used from other compilation units, but not other libraries or executables.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">696</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">697</td>
+<td class="src"><pre><code class="objc">#ifndef __XNU_PRIVATE_EXTERN</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">698</td>
+<td class="src"><pre><code class="objc">#define __XNU_PRIVATE_EXTERN __attribute__((visibility("hidden")))</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">699</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">700</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">701</td>
+<td class="src"><pre><code class="objc">/*</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">702</td>
+<td class="src"><pre><code class="objc"> * Architecture validation for current SDK</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">703</td>
+<td class="src"><pre><code class="objc"> */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">704</td>
+<td class="src"><pre><code class="objc">#if !defined(__sys_cdefs_arch_unknown__) &amp;&amp; defined(__i386__)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">705</td>
+<td class="src"><pre><code class="objc">#elif !defined(__sys_cdefs_arch_unknown__) &amp;&amp; defined(__x86_64__)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">706</td>
+<td class="src"><pre><code class="objc">#else</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">707</td>
+<td class="src"><pre><code class="objc">#error Unsupported architecture</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">708</td>
+<td class="src"><pre><code class="objc">#endif</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">709</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">710</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">711</td>
+<td class="src"><pre><code class="objc">#endif /* !_CDEFS_H_ */</code></pre></td>
+<td class="coverage"></td>
+</tr>
+</table>
+</div></div>
+<footer><div class="row">
+<p><a href="https://github.com/SlatherOrg/slather">Fork me on Github</a></p>
+<p>&copy; 2016 Slather</p>
+</div></footer><script src="highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

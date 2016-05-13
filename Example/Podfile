@@ -1,0 +1,15 @@
+platform :ios, '9.0'
+plugin 'slather'
+
+target 'BATabBarController_Example' do
+  pod 'BATabBarController', :path => '../'
+  pod 'Masonry'
+
+  target 'BATabBarController_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'Expecta+Snapshots'
+  end
+end

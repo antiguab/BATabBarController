@@ -1,0 +1,19 @@
+{
+  "name": "BATabBarController",
+  "version": "0.1.0",
+  "summary": "A short description of BATabBarController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/BATabBarController",
+  "license": "MIT",
+  "authors": {
+    "Bryan Antigua": "antigua.b@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/BATabBarController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BATabBarController/Classes/**/*"
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>BATabBarController.m - Slather</title>
+<link href="slather.css" media="all" rel="stylesheet">
+</head>
+<body>
+<header><div class="row"><a href="index.html"><img src="logo.jpg" alt="Slather logo"></a></div></header><div class="row"><div id="reports">
+<h2 class="cov_title">
+<span>Coverage for "BATabBarController.m" : </span><span class="cov_medium">75.76%</span>
+</h2>
+<h4 class="cov_subtitle">(50 of 66 relevant lines covered)</h4>
+<h4 class="cov_filepath">../BATabBarController/Classes/BATabBarController.m</h4>
+<table class="source_code">
+<tr class="never">
+<td class="num">1</td>
+<td class="src"><pre><code class="objc">//The MIT License (MIT)</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">2</td>
+<td class="src"><pre><code class="objc">//</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">3</td>
+<td class="src"><pre><code class="objc">//Copyright (c) 2016 Bryan Antigua &lt;antigua.b@gmail.com&gt;</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">4</td>
+<td class="src"><pre><code class="objc">//</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">5</td>
+<td class="src"><pre><code class="objc">//Permission is hereby granted, free of charge, to any person obtaining a copy</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">6</td>
+<td class="src"><pre><code class="objc">//of this software and associated documentation files (the "Software"), to deal</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">7</td>
+<td class="src"><pre><code class="objc">//in the Software without restriction, including without limitation the rights</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">8</td>
+<td class="src"><pre><code class="objc">//to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">9</td>
+<td class="src"><pre><code class="objc">//copies of the Software, and to permit persons to whom the Software is</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">10</td>
+<td class="src"><pre><code class="objc">//furnished to do so, subject to the following conditions:</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">11</td>
+<td class="src"><pre><code class="objc">//</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">12</td>
+<td class="src"><pre><code class="objc">//The above copyright notice and this permission notice shall be included in all</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">13</td>
+<td class="src"><pre><code class="objc">//copies or substantial portions of the Software.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">14</td>
+<td class="src"><pre><code class="objc">//</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">15</td>
+<td class="src"><pre><code class="objc">//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">16</td>
+<td class="src"><pre><code class="objc">//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">17</td>
+<td class="src"><pre><code class="objc">//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">18</td>
+<td class="src"><pre><code class="objc">//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">19</td>
+<td class="src"><pre><code class="objc">//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">20</td>
+<td class="src"><pre><code class="objc">//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">21</td>
+<td class="src"><pre><code class="objc">//SOFTWARE.</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">22</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">23</td>
+<td class="src"><pre><code class="objc">#import "BATabBarController.h"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">24</td>
+<td class="src"><pre><code class="objc">#import "BATabBar.h"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">25</td>
+<td class="src"><pre><code class="objc">#import "BATabBarItem.h"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">26</td>
+<td class="src"><pre><code class="objc">#import "Masonry.h"</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">27</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">28</td>
+<td class="src"><pre><code class="objc">@interface BATabBarController()</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">29</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">30</td>
+<td class="src"><pre><code class="objc">@property(nonatomic,strong)UIViewController* selectedViewController;</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">31</td>
+<td class="src"><pre><code class="objc">@property(nonatomic,strong)BATabBar* tabBar;</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">32</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">33</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">34</td>
+<td class="src"><pre><code class="objc">@end</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">35</td>
+<td class="src"><pre><code class="objc">@implementation BATabBarController</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">36</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">37</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">38</td>
+<td class="src"><pre><code class="objc">#pragma mark - Lifecycle</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">39</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">40</td>
+<td class="src"><pre><code class="objc">- (id)init {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">41</td>
+<td class="src"><pre><code class="objc">    self = [super init];</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">42</td>
+<td class="src"><pre><code class="objc">    if (self) {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">43</td>
+<td class="src"><pre><code class="objc">        // init tab bar</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">44</td>
+<td class="src"><pre><code class="objc">        self.tabBar = [[BATabBar alloc] init];</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">45</td>
+<td class="src"><pre><code class="objc">        self.tabBar.backgroundColor = [UIColor whiteColor];</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">46</td>
+<td class="src"><pre><code class="objc">        self.tabBar.delegate = self;</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">47</td>
+<td class="src"><pre><code class="objc">        [self.view addSubview:self.tabBar];</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">48</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">49</td>
+<td class="src"><pre><code class="objc">    return self;</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">50</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="never">
+<td class="num">51</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">52</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">53</td>
+<td class="src"><pre><code class="objc">- (void)viewDidLoad {</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">54</td>
+<td class="src"><pre><code class="objc">    [super viewDidLoad];</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">55</td>
+<td class="src"><pre><code class="objc">    // Do any additional setup after loading the view.</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">56</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="never">
+<td class="num">57</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">58</td>
+<td class="src"><pre><code class="objc">-(void)viewWillAppear:(BOOL)animated {</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">59</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">60</td>
+<td class="src"><pre><code class="objc">    //make sure we always have a selected tab </code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">61</td>
+<td class="src"><pre><code class="objc">    if(!self.selectedViewController){</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="missed">
+<td class="num">62</td>
+<td class="src"><pre><code class="objc">        self.selectedViewController = [self.viewControllers objectAtIndex:0];</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">63</td>
+<td class="src"><pre><code class="objc">        [self.tabBar selectedTabItem:0 animated:NO];</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">64</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="covered">
+<td class="num">65</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="never">
+<td class="num">66</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="missed">
+<td class="num">67</td>
+<td class="src"><pre><code class="objc">- (void)didReceiveMemoryWarning {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">68</td>
+<td class="src"><pre><code class="objc">    [super didReceiveMemoryWarning];</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">69</td>
+<td class="src"><pre><code class="objc">    // Dispose of any resources that can be recreated.</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">70</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="never">
+<td class="num">71</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">72</td>
+<td class="src"><pre><code class="objc">#pragma mark - Custom Accessors</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">73</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">74</td>
+<td class="src"><pre><code class="objc">- (void)setTabBarItems:(NSArray&lt;__kindof BATabBarItem *&gt; *)tabBarItems{</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">75</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">76</td>
+<td class="src"><pre><code class="objc">    bool same = YES;</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">77</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">78</td>
+<td class="src"><pre><code class="objc">    for(int i = 1; i &lt; tabBarItems.count; i++){</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">79</td>
+<td class="src"><pre><code class="objc">        BATabBarItem* item1 = tabBarItems[i-1];</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">80</td>
+<td class="src"><pre><code class="objc">        BATabBarItem* item2 = tabBarItems[i];</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">81</td>
+<td class="src"><pre><code class="objc">        if((item1.title &amp;&amp; !item2.title) || (!item1.title &amp;&amp; item2.title)){</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="missed">
+<td class="num">82</td>
+<td class="src"><pre><code class="objc">            same = NO;</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">83</td>
+<td class="src"><pre><code class="objc">            NSError *error = [NSError errorWithDomain:@"com.antigua.BATabBarController" code:200 userInfo:@{@"Error reason": @"Tabs must have all text or no text"}];</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">84</td>
+<td class="src"><pre><code class="objc">            NSLog(@"%@",error);</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">85</td>
+<td class="src"><pre><code class="objc">            @throw error;</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">86</td>
+<td class="src"><pre><code class="objc">            return;</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">87</td>
+<td class="src"><pre><code class="objc">        }</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="covered">
+<td class="num">88</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">2x</td>
+</tr>
+<tr class="covered">
+<td class="num">89</td>
+<td class="src"><pre><code class="objc">    </code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">90</td>
+<td class="src"><pre><code class="objc">    _tabBarItems = tabBarItems;</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">91</td>
+<td class="src"><pre><code class="objc">    self.tabBar.tabBarItems = tabBarItems;</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">92</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="never">
+<td class="num">93</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">94</td>
+<td class="src"><pre><code class="objc">-(void)setViewControllers:(NSArray&lt;__kindof UIViewController *&gt; *)viewControllers {</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">95</td>
+<td class="src"><pre><code class="objc">    _viewControllers = viewControllers;</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">96</td>
+<td class="src"><pre><code class="objc">    for(int i = (int)viewControllers.count-1; i &gt;= 0; i--){</code></pre></td>
+<td class="coverage">4x</td>
+</tr>
+<tr class="covered">
+<td class="num">97</td>
+<td class="src"><pre><code class="objc">        UIViewController* vc = [viewControllers objectAtIndex:i];</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">98</td>
+<td class="src"><pre><code class="objc">        [self.view insertSubview:vc.view belowSubview:self.tabBar];</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">99</td>
+<td class="src"><pre><code class="objc">    }</code></pre></td>
+<td class="coverage">3x</td>
+</tr>
+<tr class="covered">
+<td class="num">100</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="never">
+<td class="num">101</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">102</td>
+<td class="src"><pre><code class="objc">-(void)setSelectedViewController:(UIViewController *)selectedViewController {</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">103</td>
+<td class="src"><pre><code class="objc">    _selectedViewController = selectedViewController;</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">104</td>
+<td class="src"><pre><code class="objc">    [self.view insertSubview:selectedViewController.view belowSubview:self.tabBar];</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">105</td>
+<td class="src"><pre><code class="objc">    [self.delegate tabBarController:self didSelectViewController:selectedViewController];</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">106</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="never">
+<td class="num">107</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">108</td>
+<td class="src"><pre><code class="objc">#pragma mark - Public</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">109</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="covered">
+<td class="num">110</td>
+<td class="src"><pre><code class="objc">-(void)setSelectedViewController:(UIViewController*)viewController animated:(BOOL)animated{</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">111</td>
+<td class="src"><pre><code class="objc">    self.selectedViewController = viewController;</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">112</td>
+<td class="src"><pre><code class="objc">    NSUInteger index = [self.viewControllers indexOfObject:viewController];</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">113</td>
+<td class="src"><pre><code class="objc">    [self.tabBar selectedTabItem:index animated:animated];</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="covered">
+<td class="num">114</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">1x</td>
+</tr>
+<tr class="never">
+<td class="num">115</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">116</td>
+<td class="src"><pre><code class="objc">#pragma mark - Private</code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">117</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="missed">
+<td class="num">118</td>
+<td class="src"><pre><code class="objc">-(void)tabBar:(UITabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index {</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">119</td>
+<td class="src"><pre><code class="objc">    self.selectedViewController = [self.viewControllers objectAtIndex:index];</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="missed">
+<td class="num">120</td>
+<td class="src"><pre><code class="objc">}</code></pre></td>
+<td class="coverage">!</td>
+</tr>
+<tr class="never">
+<td class="num">121</td>
+<td class="src"><pre><code class="objc"></code></pre></td>
+<td class="coverage"></td>
+</tr>
+<tr class="never">
+<td class="num">122</td>
+<td class="src"><pre><code class="objc">@end</code></pre></td>
+<td class="coverage"></td>
+</tr>
+</table>
+</div></div>
+<footer><div class="row">
+<p><a href="https://github.com/SlatherOrg/slather">Fork me on Github</a></p>
+<p>&copy; 2016 Slather</p>
+</div></footer><script src="highlight.pack.js"></script><script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
