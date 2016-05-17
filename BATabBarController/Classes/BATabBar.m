@@ -24,11 +24,12 @@
 #import "BATabBarItem.h"
 #import "UIColor+ColorWithHex.h"
 #import "Masonry.h"
-#define UNIQUE_TAG 57690
+
+static int * const BAUniqueTag = 57690;
 
 @interface BATabBar()
 
-@property(nonatomic, strong) UIView *container;
+@property (strong, nonatomic) UIView *container;
 
 @end
 
@@ -38,9 +39,11 @@
 
 - (id)init {
     self = [super init];
+    
     if (self) {
         [self customInit];
     }
+    
     return self;
 }
 
@@ -61,7 +64,7 @@
     
     
     //tabBarItem constraints
-    for(int i = 0; i < self.tabBarItems.count; i++){
+    for (int i = 0; i < self.tabBarItems.count; i++) {
         BATabBarItem* item = [self.tabBarItems objectAtIndex:i];
         [item mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.equalTo(item.superview.mas_width).multipliedBy(1./self.tabBarItems.count);
@@ -80,17 +83,31 @@
 
 #pragma mark - Custom Accessors
 
-- (void)setTabBarItems:(NSArray<__kindof BATabBarItem *> *)tabBarItems{
+- (void)setTabBarItems:(NSArray<__kindof BATabBarItem *> *)tabBarItems {
     _tabBarItems = tabBarItems;
     [self updateTabBarItems:tabBarItems];
 }
 
 #pragma mark - Public
 
--(void)selectedTabItem:(NSUInteger)index animated:(BOOL)animated {
+- (void)selectedTabItem:(NSUInteger)index animated:(BOOL)animated {
     BATabBarItem* newItem = [self.tabBarItems objectAtIndex:index];
     [self transitionToItem:newItem animated:animated];
     
+}
+
+#pragma mark - IBActions
+
+- (void)didSelectItem:(id)sender {
+    BATabBarItem* newItem = (BATabBarItem*)sender;
+    if (newItem == self.currentTabBarItem) {
+        return;//if it's the same tab, do nothing
+    }
+    
+    //animate to new tab
+    self.userInteractionEnabled = NO;
+    [self.currentTabBarItem hideOutline];
+    [self transitionToItem:newItem  animated:YES];
 }
 
 #pragma mark - Private
@@ -112,10 +129,10 @@
 
 - (void) updateTabBarItems:(NSArray*)tabBarItems {
     
-    for(int i = 0; i < tabBarItems.count; i++){
+    for (int i = 0; i < tabBarItems.count; i++) {
         BATabBarItem *tabBarItem = [tabBarItems objectAtIndex:i];
         [self addSubview:tabBarItem];
-        tabBarItem.tag = UNIQUE_TAG + i;
+        tabBarItem.tag = BAUniqueTag + i;
         tabBarItem.strokeColor = self.barItemStrokeColor;
         tabBarItem.strokeWidth = self.barItemLineWidth;
         [tabBarItem                 addTarget:self
@@ -125,19 +142,7 @@
     }
 }
 
--(void)didSelectItem:(id)sender {
-    BATabBarItem* newItem = (BATabBarItem*)sender;
-    if(newItem == self.currentTabBarItem) {
-        return;//if it's the same tab, do nothing
-    }
-    
-    //animate to new tab
-    self.userInteractionEnabled = NO;
-    [self.currentTabBarItem hideOutline];
-    [self transitionToItem:newItem  animated:YES];
-}
-
--(void)transitionToItem:(BATabBarItem*)newItem animated:(BOOL)animated{
+- (void)transitionToItem:(BATabBarItem*)newItem animated:(BOOL)animated {
     
     CAShapeLayer *animatingTabTransitionLayer = [CAShapeLayer layer];
     self.currentTabBarItem.title.textColor = newItem.title.textColor;
@@ -153,7 +158,7 @@
         self.userInteractionEnabled = YES;
     };
     
-    if(!animated){
+    if (!animated) {
         completionBlock();
         return;
     }
@@ -172,7 +177,7 @@
     //vars used to determine total length later
     double circumference, distanceBetweenTabs, totalLength;
     
-    if(!self.currentTabBarItem.title){
+    if (!self.currentTabBarItem.title) {
         
         //need to adjust when there is no text
         //first item's outline
@@ -221,7 +226,7 @@
     
     
     //leading and trailing animations
-    [animatingTabTransitionLayer setPath:animatingTabTransitionBezierPath.CGPath];
+    animatingTabTransitionLayer.path = animatingTabTransitionBezierPath.CGPath;
     
     CABasicAnimation *leadingAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     leadingAnimation.duration = 0.7;

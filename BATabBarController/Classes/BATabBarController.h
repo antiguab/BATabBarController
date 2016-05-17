@@ -32,38 +32,38 @@
 /**
  View controllers associated with the tabs
  */
-@property(nonatomic,strong)NSArray<__kindof UIViewController *>*viewControllers;
+@property (strong, nonatomic) NSArray<__kindof UIViewController *> *viewControllers;
 
 
 /**
  Delegate for adding actions to tab clicks
  */
-@property (nonatomic,weak) id<BATabBarControllerDelegate> delegate;
+@property (weak, nonatomic) id<BATabBarControllerDelegate> delegate;
 
 /**
  Items that are displayed in the tab bar
  */
-@property(nonatomic,strong)NSArray<__kindof BATabBarItem *>*tabBarItems;
+@property (strong, nonatomic) NSArray<__kindof BATabBarItem *> *tabBarItems;
 
 /**
  Tab Bar Color
  */
-@property(nonatomic,strong)UIColor* tabBarBackgroundColor;
+@property (strong, nonatomic) UIColor* tabBarBackgroundColor;
 
 /**
  TabBarItem's stroke color
  */
-@property(nonatomic,strong)UIColor* tabBarItemStrokeColor;
+@property (strong, nonatomic) UIColor* tabBarItemStrokeColor;
 
 /**
  TabBarItem's line width
  */
-@property(nonatomic,assign)CGFloat tabBarItemLineWidth;
+@property (assign, nonatomic) CGFloat tabBarItemLineWidth;
 
 /**
  Currently selected view controller
  */
-@property(nonatomic,strong)UIViewController* selectedViewController;
+@property (strong, nonatomic) UIViewController* selectedViewController;
 
 /**
  Set the view controller that will initally be in the selected state, and animates to that state if desired
@@ -73,7 +73,7 @@
  @param animated
  Used to determine if we should animate to this tab
  */
--(void)setSelectedViewController:(UIViewController*)viewController animated:(BOOL)animated;
+- (void)setSelectedViewController:(UIViewController*)viewController animated:(BOOL)animated;
 
 @end
 
@@ -88,6 +88,6 @@
  @param viewController
  Specific view controller chosen
  */
--(void)tabBarController:(BATabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController;
+- (void)tabBarController:(BATabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController;
 
 @end

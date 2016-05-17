@@ -25,6 +25,13 @@
 
 @interface UIColor (ColorFromHex)
 
-+(UIColor*)colorWithHex:(int)hex;
+/**
+ Used to return a UIColor from a given hex
+ 
+ @param hex
+ hex number used for creating color
+ @return a UIColor based on the hex
+ */
++ (UIColor*)colorWithHex:(int)hex;
 
 @end

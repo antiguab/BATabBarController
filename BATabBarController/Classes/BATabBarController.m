@@ -27,9 +27,10 @@
 
 @interface BATabBarController()
 
-@property(nonatomic,strong)BATabBar* tabBar;
+@property (nonatomic, strong) BATabBar* tabBar;
 
 @end
+
 @implementation BATabBarController
 
 
@@ -37,6 +38,7 @@
 
 - (id)init {
     self = [super init];
+    
     if (self) {
         // init tab bar
         self.tabBar = [[BATabBar alloc] init];
@@ -44,6 +46,7 @@
         self.tabBar.delegate = self;
         [self.view addSubview:self.tabBar];
     }
+    
     return self;
 }
 
@@ -53,10 +56,10 @@
     // Do any additional setup after loading the view.
 }
 
--(void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     
     //make sure we always have a selected tab 
-    if(!self.selectedViewController){
+    if (!self.selectedViewController) {
         self.selectedViewController = [self.viewControllers objectAtIndex:0];
         [self.tabBar selectedTabItem:0 animated:NO];
     }
@@ -69,14 +72,14 @@
 
 #pragma mark - Custom Accessors
 
-- (void)setTabBarItems:(NSArray<__kindof BATabBarItem *> *)tabBarItems{
+- (void)setTabBarItems:(NSArray<__kindof BATabBarItem *> *)tabBarItems {
     
     bool same = YES;
     
-    for(int i = 1; i < tabBarItems.count; i++){
+    for(int i = 1; i < tabBarItems.count; i++) {
         BATabBarItem* item1 = tabBarItems[i-1];
         BATabBarItem* item2 = tabBarItems[i];
-        if((item1.title && !item2.title) || (!item1.title && item2.title)){
+        if ((item1.title && !item2.title) || (!item1.title && item2.title)) {
             same = NO;
             
             NSException* myException = [NSException
@@ -100,7 +103,7 @@
 
 - (void)setTabBarItemStrokeColor:(UIColor *)tabBarItemStrokeColor {
     _tabBarItemStrokeColor = tabBarItemStrokeColor;
-    for(int i = 0; i < self.tabBarItems.count; i++){
+    for (int i = 0; i < self.tabBarItems.count; i++) {
         BATabBarItem *item = [self.tabBarItems objectAtIndex:i];
         item.strokeColor = tabBarItemStrokeColor;
     }
@@ -109,22 +112,22 @@
 
 - (void)setTabBarItemLineWidth:(CGFloat)tabBarItemLineWidth {
     _tabBarItemLineWidth = tabBarItemLineWidth;
-    for(int i = 0; i < self.tabBarItems.count; i++){
+    for (int i = 0; i < self.tabBarItems.count; i++) {
         BATabBarItem *item = [self.tabBarItems objectAtIndex:i];
         item.strokeWidth = tabBarItemLineWidth;
     }
     self.tabBar.barItemLineWidth = tabBarItemLineWidth;
 }
 
--(void)setViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers {
+- (void)setViewControllers:(NSArray<__kindof UIViewController *> *)viewControllers {
     _viewControllers = viewControllers;
-    for(int i = (int)viewControllers.count-1; i >= 0; i--){
+    for(int i = (int)viewControllers.count-1; i >= 0; i--) {
         UIViewController* vc = [viewControllers objectAtIndex:i];
         [self.view insertSubview:vc.view belowSubview:self.tabBar];
     }
 }
 
--(void)setSelectedViewController:(UIViewController *)selectedViewController {
+- (void)setSelectedViewController:(UIViewController *)selectedViewController {
     _selectedViewController = selectedViewController;
     [self.view insertSubview:selectedViewController.view belowSubview:self.tabBar];
     [self.delegate tabBarController:self didSelectViewController:selectedViewController];
@@ -132,7 +135,7 @@
 
 #pragma mark - Public
 
--(void)setSelectedViewController:(UIViewController*)viewController animated:(BOOL)animated{
+- (void)setSelectedViewController:(UIViewController*)viewController animated:(BOOL)animated {
     self.selectedViewController = viewController;
     NSUInteger index = [self.viewControllers indexOfObject:viewController];
     [self.tabBar selectedTabItem:index animated:animated];
@@ -140,7 +143,7 @@
 
 #pragma mark - BATabBarDelegate
 
--(void)tabBar:(BATabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index {
+- (void)tabBar:(BATabBar *)tabBar didSelectItemAtIndex:(NSUInteger)index {
     self.selectedViewController = [self.viewControllers objectAtIndex:index];
 }
 

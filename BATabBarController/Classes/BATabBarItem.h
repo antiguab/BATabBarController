@@ -28,32 +28,32 @@
 /**
 UIView that houses the selected/unselected icons
  */
-@property(nonatomic,strong) UIView *innerTabBarItem;
+@property (nonatomic, strong) UIView *innerTabBarItem;
 
 /**
  Width of the outline when a tab is selected
  */
-@property(nonatomic, assign) CGFloat strokeWidth;
+@property (nonatomic, assign) CGFloat strokeWidth;
 
 /**
  Color of the outline and text when a tab is selected
  */
-@property(nonatomic, strong) UIColor *strokeColor;
+@property (nonatomic, strong) UIColor *strokeColor;
 
 /**
  Tab title
  */
-@property(nonatomic,strong)UILabel *title;
+@property (nonatomic, strong) UILabel *title;
 
 /**
  Image view for an unselected tab
  */
-@property(nonatomic,strong)UIImageView *unselectedImageView;
+@property (nonatomic,strong) UIImageView *unselectedImageView;
 
 /**
  Image view for a selected tab
  */
-@property(nonatomic,strong)UIImageView *selectedImageView;//most likely going to make a delegate method
+@property (nonatomic,strong) UIImageView *selectedImageView;//most likely going to make a delegate method
 
 
 /**
@@ -68,7 +68,7 @@ UIView that houses the selected/unselected icons
  @return a BATabBarItem with the associated images and title
 
  */
--(id)initWithImage:(UIImage*)image selectedImage:(UIImage*)selectedImage title:(NSAttributedString*)title;
+- (id)initWithImage:(UIImage*)image selectedImage:(UIImage*)selectedImage title:(NSAttributedString*)title;
 
 /**
  Custom init
@@ -78,16 +78,16 @@ UIView that houses the selected/unselected icons
  @param selectedImage
  UIImage of the selected state
  @return a BATabBarItem with the associated images
- */
--(id)initWithImage:(UIImage*)image selectedImage:(UIImage*)selectedImage;
+*/
+- (id)initWithImage:(UIImage*)image selectedImage:(UIImage*)selectedImage;
 
 /**
  Hides the outline as a tab transitions to unselected
  */
--(void)hideOutline;
+- (void)hideOutline;
 
 /**
  Shows the outline as a tab transitions to unselected
  */
--(void)showOutline;
+- (void)showOutline;
 @end

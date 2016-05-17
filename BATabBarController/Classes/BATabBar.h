@@ -30,27 +30,27 @@
 /**
  Currently selected Tab
  */
-@property(nonatomic, strong) BATabBarItem *currentTabBarItem;
+@property (weak, nonatomic) BATabBarItem *currentTabBarItem;
 
 /**
  Color of the outline when selected and during animations
  */
-@property(nonatomic,strong)UIColor*barItemStrokeColor;
+@property (weak, nonatomic) UIColor *barItemStrokeColor;
 
 /**
  Width of the outline when selected and during animations
  */
-@property(nonatomic,assign)CGFloat barItemLineWidth;
+@property (assign, nonatomic) CGFloat barItemLineWidth;
 
 /**
  All Tabs in the tab bar
  */
-@property(nonatomic,strong)NSArray<__kindof BATabBarItem *>*tabBarItems;
+@property (weak, nonatomic) NSArray<__kindof BATabBarItem *>*tabBarItems;
 
 /**
  Delegate used to add external action to a tab bar click
  */
-@property (nonatomic,weak) id<BATabBarDelegate> delegate;
+@property (weak, nonatomic) id<BATabBarDelegate> delegate;
 
 /**
  Method used to change the selected Tab
@@ -60,7 +60,7 @@
  @param animated
  Used to determine if we should animate to this tab
  */
--(void)selectedTabItem:(NSUInteger)index animated:(BOOL)animated;
+- (void)selectedTabItem:(NSUInteger)index animated:(BOOL)animated;
 
 @end
 
@@ -74,6 +74,6 @@
  @param index
  Location of the Tab selected
  */
--(void)tabBar:(BATabBar*)tabBar didSelectItemAtIndex:(NSUInteger)index;
+- (void)tabBar:(BATabBar*)tabBar didSelectItemAtIndex:(NSUInteger)index;
 
 @end
