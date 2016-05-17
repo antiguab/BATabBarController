@@ -53,8 +53,7 @@ UIView that houses the selected/unselected icons
 /**
  Image view for a selected tab
  */
-@property (nonatomic,strong) UIImageView *selectedImageView;//most likely going to make a delegate method
-
+@property (nonatomic,strong) UIImageView *selectedImageView;
 
 /**
  Custom init
