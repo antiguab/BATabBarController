@@ -47,7 +47,7 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
     self.firstTime = YES;
     
     //for easy swtiching between demos
-    self.demoType = BATabBarTypeWithText;
+    self.demoType = BATabBarTypeNoText;
 }
 
 
@@ -100,13 +100,13 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
         self.vc = [[BATabBarController alloc] init];
         
         //tab bar background color example
-//        self.vc.tabBarBackgroundColor = [UIColor colorWithHex:0x1C2129];
+//        self.vc.tabBarBackgroundColor = [UIColor blackColor];
         
         //tab bar item stroke color example
-//        self.vc.tabBarItemStrokeColor = [UIColor colorWithHex:0xF23555];
+//        self.vc.tabBarItemStrokeColor = [UIColor blueColor];
         
-        //Tab bar line width exampe
-        //self.vc.tabBarItemLineWidth = 1.0;
+        //Tab bar line width example
+//        self.vc.tabBarItemLineWidth = 1.0;
         
         self.vc.viewControllers = @[vc1,vc2,vc3];
         self.vc.tabBarItems = @[tabBarItem,tabBarItem2,tabBarItem3];
