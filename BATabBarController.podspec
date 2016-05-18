@@ -10,7 +10,10 @@ Pod::Spec.new do |s|
   s.screenshots      = "https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/screenshot1.png",
                        "https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/screenshot2.png",
                        "https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/screenshot3.png",
-                       "https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/screenshot4.png"
+                       "https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/screenshot4.png",
+                       "https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/screenshot5.png",
+                       "https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/screenshot6.png",
+                       "https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/screenshot7.png"
   s.license          = 'MIT'
   s.author           = { "Bryan Antigua" => "antigua.b@gmail.com" }
   s.source           = { :git => "https://github.com/antiguab/BATabBarController.git", :tag => s.version.to_s }
