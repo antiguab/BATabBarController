@@ -58,24 +58,27 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
         UIViewController *vc1 = [[UIViewController alloc] init];
         UIViewController *vc2 = [[UIViewController alloc] init];
         UIViewController *vc3 = [[UIViewController alloc] init];
+        vc1.view.backgroundColor = [UIColor colorWithHex:0x222B30];
+        vc2.view.backgroundColor = [UIColor colorWithHex:0x222B30];
+        vc3.view.backgroundColor = [UIColor colorWithHex:0x222B30];
+
         
         
         switch (self.demoType) {
             case BATabBarTypeWithText: {
                 NSMutableAttributedString *option1 = [[NSMutableAttributedString alloc] initWithString:@"Option1"];
-                [option1 addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xA8A8A8] range:NSMakeRange(0,option1.length)];
+                [option1 addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xF0F2F6] range:NSMakeRange(0,option1.length)];
                 
                 tabBarItem = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon1_unselected"] selectedImage:[UIImage imageNamed:@"icon1_selected"] title:option1];
-                vc1.view.backgroundColor = [UIColor redColor];
                 
                 NSMutableAttributedString *option2 = [[NSMutableAttributedString alloc] initWithString:@"Option2"];
-                [option2 addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xA8A8A8] range:NSMakeRange(0,option2.length)];
+                [option2 addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xF0F2F6] range:NSMakeRange(0,option2.length)];
                 
                 tabBarItem2 = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon2_unselected"] selectedImage:[UIImage imageNamed:@"icon2_selected"] title:option2];
                 vc2.view.backgroundColor = [UIColor greenColor];
                 
                 NSMutableAttributedString * option3 = [[NSMutableAttributedString alloc] initWithString:@"Option3"];
-                [option3 addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xA8A8A8] range:NSMakeRange(0,option3.length)];
+                [option3 addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xF0F2F6] range:NSMakeRange(0,option3.length)];
                 
                 tabBarItem3 = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon3_unselected"] selectedImage:[UIImage imageNamed:@"icon3_selected"] title:option3];
                 vc3.view.backgroundColor = [UIColor blueColor];
@@ -83,13 +86,10 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
             }
             case BATabBarTypeNoText: {
                 tabBarItem = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon1_unselected"] selectedImage:[UIImage imageNamed:@"icon1_selected"]];
-                vc1.view.backgroundColor = [UIColor redColor];
                 
                 tabBarItem2 = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon2_unselected"] selectedImage:[UIImage imageNamed:@"icon2_selected"]];
-                vc2.view.backgroundColor = [UIColor greenColor];
                 
                 tabBarItem3 = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon3_unselected"] selectedImage:[UIImage imageNamed:@"icon3_selected"]];
-                vc3.view.backgroundColor = [UIColor blueColor];
                 break;
             }
                 
@@ -102,10 +102,10 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
         self.vc = [[BATabBarController alloc] init];
         
         //tab bar background color example
-        //self.vc.tabBarBackgroundColor = [UIColor blackColor];
+        self.vc.tabBarBackgroundColor = [UIColor colorWithHex:0x1C2129];
         
         //tab bar item stroke color example
-        //self.vc.tabBarItemStrokeColor = [UIColor whiteColor];
+        self.vc.tabBarItemStrokeColor = [UIColor colorWithHex:0xF23555];
         
         //Tab bar line width exampe
         //self.vc.tabBarItemLineWidth = 1.0;
