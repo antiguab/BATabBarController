@@ -18,10 +18,9 @@ Pod::Spec.new do |s|
   s.author           = { "Bryan Antigua" => "antigua.b@gmail.com" }
   s.source           = { :git => "https://github.com/antiguab/BATabBarController.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/brantigua'
-  s.platform         = :ios
+  s.platform         = :ios, 9.0
   s.requires_arc     = true
   s.source_files = 'BATabBarController/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-
+  s.dependency 'Masonry'
 end

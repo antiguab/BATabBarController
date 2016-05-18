@@ -6,8 +6,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/BATabBarController.svg?style=flat)](http://cocoapods.org/pods/BATabBarController)
 
 ## Overview
-![gif1](https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/gif1.gif)
-![gif2](https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/gif2.gif)
+<img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/gif1.gif" width="450px" />
+<img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/gif2.gif" width="450px" />
 
 
 The standard TabBarController is very limited in terms of animations when you make a selection. This cocoapod allows you to use one with a sleek animation with customizable properties!
@@ -60,7 +60,7 @@ baTabBarController.tabBarItems = @[tabBarItem,tabBarItem2,tabBarItem3];         
 
 This creates the following:
 
-![example1](https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example1.png)
+<img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example1.png" width="50%" />
 
 ### Default with Text in Tab Bar
 
@@ -97,7 +97,7 @@ baTabBarController.tabBarItems = @[tabBarItem,tabBarItem2,tabBarItem3];         
 
 This creates the following:
 
-![example2](https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example2.png)
+<img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example2.png" width="50%" />
 
 
 ##Methods
@@ -117,7 +117,10 @@ To change the color of the tab bar, you can change the `tabBarBackgroundColor` p
 ```objc
 baTabBarController.tabBarBackgroundColor = [UIColor blackColor];
 ```
-![example3](https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example3.png)
+
+result:
+<br/>
+<img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example3.png" width="50%" />
 
 
 #### Tab Bar Item Stroke Color
@@ -126,7 +129,9 @@ To change the color of the stroke in the animation, you can change the `tabBarIt
 ```objc
 baTabBarController.tabBarItemStrokeColor = [UIColor greenColor];
 ```
-![example4](https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example4.png)
+result:
+<br/>
+<img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example4.png" width="50%" />
 
 
 #### Tab Bar Item Line Width
@@ -136,7 +141,9 @@ To change the size of the stroke in the animation, you can change the `tabBarIte
 baTabBarController.tabBarItemLineWidth = 1.0;
 ```
 
-![example5](https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example5.png)
+result: 
+<br/>
+<img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example5.png" width="50%" />
 
 ## ChangeLog
 #### Version 0.1.0 (05.18.2016)

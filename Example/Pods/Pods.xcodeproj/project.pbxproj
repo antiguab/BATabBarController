@@ -8,73 +8,78 @@
 
 /* Begin PBXBuildFile section */
 		021C50274FF43A6F07E119D572C3ACB6 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = AB9F8254789F5E1641A9977774B2BEB2 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		026D296FF54A3AB43E4D975A298AC4B7 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6100C40292B27DB46B36489D64CE98BC /* Masonry-dummy.m */; };
 		02C7E3EC1E1DFDD7046BD26A67E92686 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C0924B8F6FE645F5AA6DE34C40FD2B /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		02D7F5E3FF823EC22A4951E18776A929 /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7688BA97B44797B5F87613BE84E65E /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03CF7336A10FEBFA130334D80A3EA5D5 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 34554F71916619D4998C4B05706E022B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		07282695806D1DFBF187BFA004D80641 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D17A902125006164F98D20EDF93FD85C /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		081F2104425CDCB0915354E2FBD7E24E /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 857DC623B7D4F6774217198D46E5D88A /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C6C105EAE756D6DD0CCD8A0758D34C8 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8147E5CCA7ECFC8159AE549A1FF196A2 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		104AFE24D01F1C4495926B40B53C5945 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF34D10F36D6B645B46539AB473C062 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11CF0C44A36897A963C15B74C2AEC415 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC320B43C2D49380DFE9CF6D3D7B154 /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11FE7D8FE462ABC14879A2B6668826DA /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EA8F3AD9D5313867A8C48F50DD33A95 /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14C609D8F203FD45194E93997EFF744E /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 8147D25191F5D128F3A9C009FB83C7DC /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1704EE32E299A5E634FB66F9D8B58D4E /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 9751F9DCCF34DF289A2F5FB3272314AC /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17A9BCC24A490C93AB72A2D97A9EF3BD /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11EC954DA1B031E241F2F502541B03 /* MASViewAttribute.m */; };
 		17B8415262D04EF5F5375952456A9D77 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED543461C03FE9F365C5F941F834104B /* FBSnapshotTestController.m */; };
+		1898CE355C0D8EF67E9AE9D29CCD0CD1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = CF62900726501D4D2A606CBAE9F928A4 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1951E93136354D93294C3D909910770F /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88253B7F58F02FA6A8AF8447DB39B98A /* FBSnapshotTestCase-dummy.m */; };
 		1B3C96CFB0485DDE384A44809B9D230C /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 08E3D8C990F97108C8767D28783C10CB /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CF63668EADB1BD9FDB78C7DB098CE9F /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A426CAD3FAD6E1BC1B9CC2845DA250 /* View+MASAdditions.m */; };
 		1E4678C641CE9A9C1FA2D201D4A32CF8 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A742151071C764420594BDDD11530D2 /* FBSnapshotTestCase.m */; };
 		2239B5E63C5D2C1323D66F489F075C42 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA5F9070535B28FC3D28F61520BDC85 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		22E8E2FB89863AEC11CB0A2F74B66A4A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A69AD0237CBECB2ED21B40E60E958C3 /* QuartzCore.framework */; };
 		237FB063FB365119546C7B5006224F3B /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E6AA4C061852160BC31AB6D9735D5A5 /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2659CDBCD14D4FF09688BC11520B4D46 /* EXPMatchers+FBSnapshotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6397F1E6941BBAA7B874B8492AE0D4E8 /* EXPMatchers+FBSnapshotTest.m */; };
-		2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A6B8FCAD238B67E98CAE2ECB855A27 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		293A5E084F4248C14FDF46549B80DA53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
 		2945FAA75C956DD6A541EB51E42E6899 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D1D61DB0F87522DBF16AE2D88BF8BA /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE5C1731A13CC681BCEC22B5269B6475 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A17721E4A81DB608CA6D4FB6F0ADAFB /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E871A275CA96EF722D0B23ACDDBBCE /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AF132B91BA2311974C53D7EAA0489A4 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07DC2FDCDC0DE63B4A2DC85F8195CF /* NSArray+MASAdditions.m */; };
 		2E3F4A074935F37B5D3D5D8FF3B732A8 /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 010539370899C386171297A5D4662AF9 /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F9D3747596E4E074C3B776949091047 /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = E0DE0120F2EBC442390BBB8F89A9CF53 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		30BDB3B80D9CDB55DE175C36A1B864A0 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C311DC63FCCD79FAE86B547E284792 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		320A729B0A6C02122510CA529A7BEF7D /* Pods-BATabBarController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8757085FB2DF5C58290558F3F3F22A84 /* Pods-BATabBarController_Example-dummy.m */; };
-		331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 41373F5EDDDCE78B7743BCB2BDECF1AB /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		335DCBC17D2469F228020EF6C7B41F7C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DD615E4EA3ADC236293CE948BFA94BED /* MASConstraintMaker.m */; };
 		339A0C1BFF72397A705959E03877DDDB /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = EA23FFDB8E8BBE565A68BC613FCA1051 /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3403EDE5F0A9712D0763CDE7E7A57924 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D347CE06CD701510B1AC7B09E73F253 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		341D7536159B52F41598F730CC45D548 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = B18DD9EF4CBBA79A7A9FF9A5C26EE584 /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		378704AC54545F8AF9D2E708160531FA /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 41373F5EDDDCE78B7743BCB2BDECF1AB /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A013F13122CDB8EE962F8CB7C6FCC8E /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A1E26AFBAEF9C1DBA4C780FE53A219E /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A3F51A92B074CEEE3D06B3B392FEBEC /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 02305324EA5B47043B346A5C23A89474 /* UIImage+Compare.m */; };
 		3CFFC0E46BB1F8429C6D3AD0CE406C05 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF31F155B6FBBDD8C6F4E390A699C8D8 /* XCTest.framework */; };
+		3D63C29B06B973334852220FF1BC019C /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C5F8537F29C76431A52E40B42D8F8DA5 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E463E2B6917D9AA08A03BA8A8E74A18 /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 00564B14C6EAE871D9437D7973548FF4 /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = CF62900726501D4D2A606CBAE9F928A4 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40F505E69B8595361C2A7528DDA222B6 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7BC0352DD89317F4E35800388E3E68 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		41AB515A6300BF7F932B0D0D3CDDAF65 /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCF4FC29C7B8F805861BDDBA631345 /* SPTSharedExampleGroups.m */; };
 		4231743B6C143BDB4A5FBB032E6D3799 /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F3965FD29681BE9EF5423AA40F583A1D /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4268926623BF0783AD544958FEAF3696 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3408D4F6520051FBA4529F88FD92DB54 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		430CE433DB59FE090A8CC6AFCFA43337 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DBD97D058ED671C8EEA360658975911 /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E03F4ECDDCDD6D644B220A72821E9D /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4345303712E98F69200F91F4ACD0B6BB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF31F155B6FBBDD8C6F4E390A699C8D8 /* XCTest.framework */; };
 		4383E0DB1B07B9EB3155EF5D5F27C7BA /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E75CDF651A5E939C08AB75D16923D571 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		43A1104CA0C628C2F693902EADA32B8C /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 142E01D520F35DD17B620673469BAF67 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		445EC6E6F51F3E515064FC0DF7D9BC10 /* BATabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = C32614B42D6B75373FC56346515BD736 /* BATabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		446EC9B03302B70BD994832DFC9A5E73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD3E7B203996A0AD52CB5A5492AB0D /* UIKit.framework */; };
+		44B54DB612E733A54ACA1E8D2AE83646 /* BATabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF60D005B2EA3085AAE6B3C9A9E8AE3 /* BATabBar.m */; };
 		46343E6711EAF0999C807449DDE2A082 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 5ADDDA66469CF1C263B4061823B9735C /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46F312CBB94BAE62B58D3D7AE28E8DBD /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FB669400269F04F9A1F093057C1076 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		487899F028C39C1A518547A1AB2F625A /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D77144F341E034EDCAB94A681A8854F /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		489C7F52D828DBEE616DA4B99E53B1C8 /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = E290C14CA62DF4B5CF33B29DD47731FE /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		49EFE75BAF060A33327F3CE8C18436F2 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7B584CF3498F776EC97AF9743BCDBD /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4AD0B8823100F6B28F7DC675EF010F79 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 981EE52F808E757220D8A179B13114D0 /* ViewController+MASAdditions.m */; };
 		505D0A5F9CCB51BA4E34249E9C606A83 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 278DE1F726EF042239D2E6EA33F975B8 /* UIApplication+StrictKeyWindow.m */; };
 		5189FB493154AC07904FD5DE9CC06BD6 /* ExpectaObject+FBSnapshotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C75E08FD04BFDCEA22F6879AABAA15 /* ExpectaObject+FBSnapshotTest.m */; };
-		5457FCC2699281B5A4203BA1559F593F /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07DC2FDCDC0DE63B4A2DC85F8195CF /* NSArray+MASAdditions.m */; };
 		562BE99A6F630E709218EB9B3CF36E90 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 561C1E260E546F0A1C63C40ABEADEFE6 /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5BB3B1A9A5EE9417C216046A2D567ECA /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = B1852EA53822091CFC6467D46BEC9989 /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C5F05F50956A2C37BB599B58184BB58 /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE079BC1B1CD4C94D13A3DDF7001FBF /* XCTestCase+Specta.m */; };
 		5E8F33E777456DA63CA2D902508A9058 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B05BED0715E23BF41EAA8E39AC3A52 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5E9ECF793DB38805B69BE552AC3CCDCC /* BATabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D1302995204AB40A012A5CF43DA5EA /* BATabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EDB75E38BCBCF939E7313C741467A72 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = CC035E380431933B6576AD1804D1F650 /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F6D96E64F890BDC4A75B73C3D50A0DD /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7ABB9DBF0820AD4EEE5D499DA017D9D /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		60D3CCEB5B53542228790ABD8885AF42 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C6D5DA1282615A773BF7F1870AD43C /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63D0CD4F0FB5A6103E1DDB46E876CBB6 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4CA215E50893D5B92EE534160A036B /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6447CA1056CC1618CD6AB00095B19CF3 /* BATabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48428F943A272F7270331F8C5BC744EC /* BATabBarController-dummy.m */; };
+		64CDA74A25E02BF2A8A091B4EA204490 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E03F4ECDDCDD6D644B220A72821E9D /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		674E4CD7C2C89AB3437A9914BB21E36B /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B261900F25ED736AB5C16FDB2A0C76A /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6924E116731D7079958063A3EE0781ED /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B994B6945EAAC37B86FE4F4A14C933 /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69EBB956302554EA37775F4D806BC4DD /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FC826CD7E05193754A214BF8869FC1 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6A4E3ACA285A21392936C110E7EC91F0 /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 855D94085750200616AD926612EBCDF9 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D37BEAA1FC469C3582CACB4E9766502 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB3B0326B2EF5B0C1F499A764FB91F /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6EB2498C2AFB1DF8555CB7C1EF89CA5C /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = D14D843F04BDBF782ECE90CFD73A9681 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F8EF3DA96C63F196960C4A7953B3F75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
 		70545E4EA86C6E593A2A9F6731DA8F6D /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F5CF645337730491E4C0FAB1ECCD8D /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7436C602BB1CA7C91560C28DE749357B /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A58E88A6097BA80BDF7C76DEEA38236A /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		74707D5ABEC55B3084F52C40A4227B06 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D6282C36B0F64B422353E3C65E4398 /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,73 +90,69 @@
 		7FEE0E8D094D7BCCAC7129473EE05ADC /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 407A1F0ABB4F1F10D2769E7D60ACEA11 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8059E5674B08670B0A002D564FFABF44 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA8E5779A890969461274FFB50E20AF /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8063F6343631B788E4882E3B1A0F979F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD3E7B203996A0AD52CB5A5492AB0D /* UIKit.framework */; };
-		81403CAF6C4C1D3DC8B199289C3A6F59 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D0A426CAD3FAD6E1BC1B9CC2845DA250 /* View+MASAdditions.m */; };
-		81599471BAB0420D54E1ADF8507A5113 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6100C40292B27DB46B36489D64CE98BC /* Masonry-dummy.m */; };
 		81AD2E54339CC347F507CD9E623AA940 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
 		830E0B88BAE785C570D5CD9F4BFAFCAA /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6E9838018623423A78FD8E9B77DDCF /* SPTCompiledExample.m */; };
 		84838BD3F6F329DC73C2526BFB7170E4 /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = E649CD2F2853F16965E801974DA5601D /* SPTTestSuite.m */; };
+		84A41C8F48824FDC960667B303C8FB38 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A057681AA44D35D89A0F0FECC68077 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		872948DAF79618AD725E0BF364E5DDD4 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EAEB68F14ED49EA398AF15355690B3F /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		87FEF0A2D57C289DC3BF92089E12EDEB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E3516926AA2C8DA19F1185A13B981B27 /* MASConstraint.m */; };
 		8B0FDAB1987ABB2BAC4546A6F8DDEF86 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 09CA44EA0E32CABD4DB7221C60F1D81D /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8C8DD680CB21D3ECEAAEE6D3E5F2BAF0 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = C8640E09D151BEAA882D8B5FE0F368A5 /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DF90D623F7F9015EEE9F1D7FEE7E053 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAD51B1C1A22AC28AE9D34ED802E46D /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E56354601AC3BBFA7292DBF8DDBE059 /* BATabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C997498D2CE7DD584867E2F9116A198C /* BATabBarItem.m */; };
 		8F674582EE71972EE60EFD96C1F173D5 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 636E8CBEB03E9051E79D4A53A5B7880E /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9019F9233E2A8B04A82C1B8D0274F09F /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 09891F1D60E2D07B41D42D0CB0D50B9C /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 656C8D607E0A92C2879DE4D5B20756B6 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9432EA0C28AC375540C5B2ED9DA2F349 /* BATabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C997498D2CE7DD584867E2F9116A198C /* BATabBarItem.m */; };
 		956FB3AB698AF3DA776A9F24AA79C229 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = C7D30BD84FBE637490178B625612094C /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97E91EC237B8623D895DBF6092034AD7 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B3A49A3233785A72311AF31A7FC4D5F /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A057681AA44D35D89A0F0FECC68077 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B546D0F895D9B5A8316B948CEE95C77 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8991E83437138929B646FBD1176F66 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D7F8C30DDF2B3EC92497987C1662835 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = DD615E4EA3ADC236293CE948BFA94BED /* MASConstraintMaker.m */; };
 		A1A928230246BDC9879422152FF675ED /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D7165327BE1FDD1D8AF04D4A23629F9F /* SpectaDSL.m */; };
 		A1AFB9C901F6D269DB7666D62C405F7A /* Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E8E1551A41EF3031B0436BD3432E42 /* Specta-dummy.m */; };
 		A21B16DDE880B9A142F205D4C4E8023E /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B04648C967016992B2E627A98DBD7 /* UIImage+Snapshot.m */; };
 		A26F992E8831118311F3DB7CB830595A /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E532D2C1C92A28719E55AB2E3A6DB4B /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A44AF130E4C5313CD193D9BF68853026 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11EC954DA1B031E241F2F502541B03 /* MASViewAttribute.m */; };
 		A65C491577A425AF82C53F4A40A0A24B /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C4AD539C39A961641DE211F1EC69F28 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A6854D311D55E2BBD8BFCE4E82DF3EA9 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 2753BBB1AB8C8CF0159B52EDAB074DED /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6F873550C91D071D3792BF1CE5EA729 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
 		A7141BC83638F4B38D4D312BAE3BDAC4 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 089EA15B1759F253798A525447CA591F /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A7BC34BE343CBF897B7FCF3F83900A1F /* BATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34942D01B43DD2E58E9CE1DED90BFB48 /* BATabBarController.m */; };
-		A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D347CE06CD701510B1AC7B09E73F253 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8490A46CB5206BCA5F90FCFBA2D731E /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D43B3643EAE5ABF8ED8D5CD8B02566E3 /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA7B402D31D86AE5E3DD083408311FF1 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C9B3341F75F39B6D1A2A6F00E05F26 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAE75938ED3DD46BC00352B82D7CA890 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = BA639094D8282D11F542167AE6867D11 /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB1D6408D48F6ECF3FCE553BE73961F5 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF02B78EA5DC96F0A8695EDB2524DD2 /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD21FE7F6351D780C4EC6579DD60CA6A /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3D762DDA3EA5E3DA1AB1DDA9BEDEB3 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6791D14732A3C17164F61CC72FFB0D /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 889F410729B77B810B4B3B723B101466 /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		AF4E7187E09A5AF3A0758991203153DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD3E7B203996A0AD52CB5A5492AB0D /* UIKit.framework */; };
-		AF62B956405F7734F5A9B8F3FD4B1B96 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 981EE52F808E757220D8A179B13114D0 /* ViewController+MASAdditions.m */; };
-		AF838B10DB32B762F8E4DFDC98001492 /* BATabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF60D005B2EA3085AAE6B3C9A9E8AE3 /* BATabBar.m */; };
+		AD71F5FF10F8ADB8CCCFAF29E684E592 /* BATabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D1302995204AB40A012A5CF43DA5EA /* BATabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AFA5085FF4A352FD6AC096299F534FE6 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 68014B540C08FC4E3198DF14A8184921 /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C311DC63FCCD79FAE86B547E284792 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1BEDAA20FD73423EE388AA524727F3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD3E7B203996A0AD52CB5A5492AB0D /* UIKit.framework */; };
 		B33234F432A72D5E8B65694AE937B78F /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DE5CD34889491B1AB65F00B64F2320 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B52FD1910AFD73299AB289E0A50BD59A /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 656C8D607E0A92C2879DE4D5B20756B6 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5B220B56D1B3EDE8D497123EA50F800 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B28C5AC8B56B4B1B89F7F0ABB8DDBB /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6252A5179DB92DB2E90896E1F98EB00 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C7DD9880911215C8FC32306A23A859 /* SPTExample.m */; };
 		B6DACCDE72EEB460837304228A408D41 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 22715D5ED68DAF144049BCD76614C84F /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9F67F44877233A89AD8A54F771BFB17 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 674857DFF848E788BB50316C031E1BAB /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCD4B362C6194513150915437754E2D4 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BD1B077103CD484B74962612A4A3F0 /* MASCompositeConstraint.m */; };
+		BD2435EDB623FF571FFBE64CC0C2428E /* BATabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48428F943A272F7270331F8C5BC744EC /* BATabBarController-dummy.m */; };
 		BD30B724A71CF5D6E93805B7615EC79C /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = E9017C573B176275F6B681B3EF1172C8 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		BD5A786B9139E0EA11E6C482ABA74116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
-		BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0959C19514DBA0E06446701A0D97AD /* MASLayoutConstraint.m */; };
-		BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E3516926AA2C8DA19F1185A13B981B27 /* MASConstraint.m */; };
 		BEB3DC02DFD04F693BCCB89BF0EE98E6 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D1355282E637401BD9F8B5B3DA1629 /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFDE1B4D29FD99166A4051269119BBC9 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 38674200B03A8820FB03F54F880B58AC /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C236B6D39F2D521EBBB23873512BB5D0 /* EXPMatchers+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = FC4E4FEFA032E9C6466C39B334937C65 /* EXPMatchers+FBSnapshotTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2BFF99EB859FD7056CF72C4850693D1 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DFD232FB4F3F460A4D36329CADABD9 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C2D074CEBBF78C3868D5607246DA97D4 /* ExpectaObject+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = C7794156711B2FBDB6F2849C59484B53 /* ExpectaObject+FBSnapshotTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C417D1A8F5181E539095DFC1D00BABF9 /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5602AEBF9D6490582F9DF7DB37A90 /* UIColor+ColorWithHex.m */; };
+		C4EC95B82C663A8989D995A65CFE39C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
 		C5A6534B3EAAA46AFB96786632A9A812 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = BC1DAE9709695F4A0A59B7BC0468AB9D /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		C6671739E8C5904113586F8BEBBC9780 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC780221AA2E643730381058AE2B831 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B261900F25ED736AB5C16FDB2A0C76A /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6BED8123BC1B47D9A8F256569943794 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE5C1731A13CC681BCEC22B5269B6475 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C98F5401E5C1AB6512BE50C3B7CEA9BF /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8B7F7D2D040F530D7D3E95B5445F8F /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9ED50926CDBDB5A74ACE80AC402984 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D562F1DD0E8548DEE1792761E871ECFF /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		CB08C9C83ABDBE55762A423ED48491EF /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = A728E0695D4EF27F248FCAFB1DBE34E7 /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		CBC25FB8E66979034A2F4DD0F990E762 /* BATabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 10579F51A73AD1D85063ABC5BA8FA2A7 /* BATabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBD8F740EB0BFC4A68CE8207DD4130E0 /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 97139FF521C6E9F0C6CE8A11E915C381 /* SPTExampleGroup.m */; };
-		CD4EE64FECBAD56A8AD2F43832548C38 /* UIColor+ColorWithHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5602AEBF9D6490582F9DF7DB37A90 /* UIColor+ColorWithHex.m */; };
+		CE5228EC43D740F700D9F18C0CD73377 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE08FD3975E2964B233EF098CC267FA /* MASViewConstraint.m */; };
+		CF04A0B52579FB9C872CF4DDCC0CC1F9 /* BATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34942D01B43DD2E58E9CE1DED90BFB48 /* BATabBarController.m */; };
 		CF95446EA555B49150EA7270096D78B2 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F63A9908AB9AEBFBC7E8BE2925C752 /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D3D9F12613E23AD64C1FA5F7081A3668 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D562F1DD0E8548DEE1792761E871ECFF /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		D42799488F38F2DB8A580730CEE13CE6 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = BD574968BE9CB77E048BA40FA28C567A /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4DDCDDFAE9C5BC9FB25912F64362B78 /* BATabBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 10579F51A73AD1D85063ABC5BA8FA2A7 /* BATabBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D843D764DDFCBFD35475F291DC16E5A7 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC35CEE82A82E4E122FFB850FFAFC2A /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB73A65836B186FCB704196B7F4F6270 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
-		DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 38674200B03A8820FB03F54F880B58AC /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE31B168D9197213CEB7B90E3ADEB4CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
 		DF220808896F8764EAC913C2AA5184B4 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DA1C23DA4E16A72871FCB537204976 /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFF580AE359407E841BA8D8DDCE6E299 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C79DA3D9D33D3361EE7637AF4C87DE /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E059109098657C1BF67DC2DBAC336041 /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0A7B5ECA20CED5974362BB89477318 /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -160,12 +161,12 @@
 		E1632D76F694EEE4DF78B9791EE43E51 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EB87F4321B1EBCE5A8B00F2675343C /* SPTCallSite.m */; };
 		E1AC67EEB51D43EE624E847C32946782 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA0ACC692D7D0CFD61C947C5C4B7A18 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E2EBD18BA89D3FF648947DF31FA12D44 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 85007B8F638B962CA91406404E89D732 /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E6B49FBCE3957DB67F691ACCC4CAF4BE /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE08FD3975E2964B233EF098CC267FA /* MASViewConstraint.m */; };
+		E781E073B16A976B978CFACCDC6855F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CC0959C19514DBA0E06446701A0D97AD /* MASLayoutConstraint.m */; };
 		E8335F0AA7017FFD90224BDE4EE4CF3C /* Pods-BATabBarController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE63334BC7C8F23C16F32C79EABC720 /* Pods-BATabBarController_Tests-dummy.m */; };
 		E867CBF850D20C314BF4BD790432455D /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = E96C4FF2BF595EC453F708D604B72804 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3408D4F6520051FBA4529F88FD92DB54 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = EC3D762DDA3EA5E3DA1AB1DDA9BEDEB3 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8BCDF512A994E1D2AF64A65994EAB33 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 38BD1B077103CD484B74962612A4A3F0 /* MASCompositeConstraint.m */; };
 		EE52A320EC3155B114104E06396D1B59 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = C1FC32EAF4598F885FCB8EB0B88F156E /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEE33C14EC683514B71856459A8DA89C /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A6B8FCAD238B67E98CAE2ECB855A27 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFA5F01D542863DCAAD15934C0048C56 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BD8E254B9F91F4A9DD595030F7D8E0 /* FBSnapshotTestCasePlatform.m */; };
 		F1F4E65611F5567A86AF797EAC3E225B /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1734F8109DFA480B3F956AAE2DB122 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F41596C16B89FFBF98A1A43963148106 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF31F155B6FBBDD8C6F4E390A699C8D8 /* XCTest.framework */; };
@@ -174,10 +175,10 @@
 		F64E3DADB27A2EAECA85D5D2F5D42A75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1B0A45F864B16BBE8E470C07F8F740 /* Foundation.framework */; };
 		F68B68A3AB62EC80B7492CCF44910C65 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C29BA18E65227F4674F1AC62EE6F0E /* SPTSpec.m */; };
 		F882DAC8DC3C893A555573EBC2E6BEAB /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D900D0F08443DEA017AD48D7302199B /* SpectaUtility.m */; };
+		F969F86765385E36F7CFB6DCDF6C5ECB /* UIColor+ColorWithHex.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7688BA97B44797B5F87613BE84E65E /* UIColor+ColorWithHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB1B75752FF7DC01A325894D183ED3BD /* BATabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = C32614B42D6B75373FC56346515BD736 /* BATabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD0F8A41410558CC1CAD0FB1F776879B /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = FBABAE7DF1AEF4FDF7E58AB99042FB54 /* UIImage+Diff.m */; };
-		FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8147E5CCA7ECFC8159AE549A1FF196A2 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDF72740DBC37AFACFED73ED42282383 /* Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 971A25F0E310AB30471FBE429852F8E9 /* Expecta-dummy.m */; };
-		FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C5F8537F29C76431A52E40B42D8F8DA5 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF745D139B2CC13B7ECE78D3EBFFC7BB /* Expecta+Snapshots-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD4817B290C7F868E7514F32785426F /* Expecta+Snapshots-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -196,11 +197,18 @@
 			remoteGlobalIDString = 2925B4A18124BA74F21143C0D1A487DD;
 			remoteInfo = Specta;
 		};
+		57BC706ABA7AF0C3E254C7C4D617B2D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FEAFD4B939B9CCFD60C49F6512995C0;
+			remoteInfo = Masonry;
+		};
 		71E71919C1121656C5CBC46AA3B8E46B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 53480ED0BE09FF49E34B1702D485CAAB;
+			remoteGlobalIDString = 5FEAFD4B939B9CCFD60C49F6512995C0;
 			remoteInfo = Masonry;
 		};
 		9E9FFABB5EA95D4089449CE5BC9D48B4 /* PBXContainerItemProxy */ = {
@@ -221,7 +229,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 78C5AD119F12845865EEB2FCA5119A5F;
+			remoteGlobalIDString = 1D06D12359705921944C33726CEDC077;
 			remoteInfo = BATabBarController;
 		};
 		C14F9EB00009E08EEA950419BBC1EA49 /* PBXContainerItemProxy */ = {
@@ -454,6 +462,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		25C5CBA423C5F887227E853C5DE08C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EC95B82C663A8989D995A65CFE39C5 /* Foundation.framework in Frameworks */,
+				B1BEDAA20FD73423EE388AA524727F3C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28BF4358917ECE5BCF51BDEF277700F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,14 +491,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F4F9A69C74A856D0BEEDC0506157537 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6F8EF3DA96C63F196960C4A7953B3F75 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AF884D7EB8DCBC11D43EB1C8ACFD3CAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,20 +508,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C8B2A2AEB6E9BC80772361413DD0F476 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293A5E084F4248C14FDF46549B80DA53 /* Foundation.framework in Frameworks */,
+				446EC9B03302B70BD994832DFC9A5E73 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7EB79A10078C2934324984A224A9430 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DB73A65836B186FCB704196B7F4F6270 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAB9E9D9BBDB93399D3C2B91469EC4B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE31B168D9197213CEB7B90E3ADEB4CC /* Foundation.framework in Frameworks */,
-				AF4E7187E09A5AF3A0758991203153DC /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,10 +646,10 @@
 		6240E33222F8E5A4E45BC8B51B6C30B0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C32614B42D6B75373FC56346515BD736 /* BATabBarController.h */,
-				34942D01B43DD2E58E9CE1DED90BFB48 /* BATabBarController.m */,
 				F9D1302995204AB40A012A5CF43DA5EA /* BATabBar.h */,
 				3FF60D005B2EA3085AAE6B3C9A9E8AE3 /* BATabBar.m */,
+				C32614B42D6B75373FC56346515BD736 /* BATabBarController.h */,
+				34942D01B43DD2E58E9CE1DED90BFB48 /* BATabBarController.m */,
 				10579F51A73AD1D85063ABC5BA8FA2A7 /* BATabBarItem.h */,
 				C997498D2CE7DD584867E2F9116A198C /* BATabBarItem.m */,
 				DE7688BA97B44797B5F87613BE84E65E /* UIColor+ColorWithHex.h */,
@@ -915,36 +924,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		657D857047A6A935B5A2E9BD049194F2 /* Headers */ = {
+		0B7E4D2F03C38F66DC77B63F27AC9213 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */,
-				B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */,
-				2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */,
-				EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */,
-				C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */,
-				9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */,
-				FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */,
-				3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */,
-				EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */,
-				FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */,
-				A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */,
-				2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */,
-				432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */,
-				331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A6C9033EEF93EDE18CBB3FBDEE779841 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E9ECF793DB38805B69BE552AC3CCDCC /* BATabBar.h in Headers */,
-				445EC6E6F51F3E515064FC0DF7D9BC10 /* BATabBarController.h in Headers */,
-				CBC25FB8E66979034A2F4DD0F990E762 /* BATabBarItem.h in Headers */,
-				02D7F5E3FF823EC22A4951E18776A929 /* UIColor+ColorWithHex.h in Headers */,
+				84A41C8F48824FDC960667B303C8FB38 /* MASCompositeConstraint.h in Headers */,
+				30BDB3B80D9CDB55DE175C36A1B864A0 /* MASConstraint+Private.h in Headers */,
+				EEE33C14EC683514B71856459A8DA89C /* MASConstraint.h in Headers */,
+				AD21FE7F6351D780C4EC6579DD60CA6A /* MASConstraintMaker.h in Headers */,
+				674E4CD7C2C89AB3437A9914BB21E36B /* MASLayoutConstraint.h in Headers */,
+				B52FD1910AFD73299AB289E0A50BD59A /* Masonry.h in Headers */,
+				3D63C29B06B973334852220FF1BC019C /* MASUtilities.h in Headers */,
+				1898CE355C0D8EF67E9AE9D29CCD0CD1 /* MASViewAttribute.h in Headers */,
+				4268926623BF0783AD544958FEAF3696 /* MASViewConstraint.h in Headers */,
+				0C6C105EAE756D6DD0CCD8A0758D34C8 /* NSArray+MASAdditions.h in Headers */,
+				3403EDE5F0A9712D0763CDE7E7A57924 /* NSArray+MASShorthandAdditions.h in Headers */,
+				C6BED8123BC1B47D9A8F256569943794 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				BFDE1B4D29FD99166A4051269119BBC9 /* View+MASAdditions.h in Headers */,
+				64CDA74A25E02BF2A8A091B4EA204490 /* View+MASShorthandAdditions.h in Headers */,
+				378704AC54545F8AF9D2E708160531FA /* ViewController+MASAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -967,6 +965,17 @@
 				E0D97FEC7F0CEA6450AAB7A1BEC1F840 /* SPTTestSuite.h in Headers */,
 				E059109098657C1BF67DC2DBAC336041 /* XCTest+Private.h in Headers */,
 				D843D764DDFCBFD35475F291DC16E5A7 /* XCTestCase+Specta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDC82313AFB9DBF27A57D1B19944FAC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD71F5FF10F8ADB8CCCFAF29E684E592 /* BATabBar.h in Headers */,
+				FB1B75752FF7DC01A325894D183ED3BD /* BATabBarController.h in Headers */,
+				D4DDCDDFAE9C5BC9FB25912F64362B78 /* BATabBarItem.h in Headers */,
+				F969F86765385E36F7CFB6DCDF6C5ECB /* UIColor+ColorWithHex.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1062,6 +1071,24 @@
 			productReference = 116C20A9668A63F3F039B8F9E435B298 /* libExpecta+Snapshots.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1D06D12359705921944C33726CEDC077 /* BATabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9157AADC8E64AA6821CC422D00A013C2 /* Build configuration list for PBXNativeTarget "BATabBarController" */;
+			buildPhases = (
+				7BDB6478B95232C8BCD086DFDC5E4E03 /* Sources */,
+				C8B2A2AEB6E9BC80772361413DD0F476 /* Frameworks */,
+				BDC82313AFB9DBF27A57D1B19944FAC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1835327686BFF4EE416241D66A4DF3BC /* PBXTargetDependency */,
+			);
+			name = BATabBarController;
+			productName = BATabBarController;
+			productReference = 217E97651BF4894B3296B19D140EE3EF /* libBATabBarController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		2925B4A18124BA74F21143C0D1A487DD /* Specta */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA82A3E9FFFD0FF9F3C5FB7CCBE69F17 /* Build configuration list for PBXNativeTarget "Specta" */;
@@ -1096,13 +1123,13 @@
 			productReference = A240E77995379AE56D4F92CC71BC3015 /* libExpecta.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		53480ED0BE09FF49E34B1702D485CAAB /* Masonry */ = {
+		5FEAFD4B939B9CCFD60C49F6512995C0 /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6653DB75D219E078020C341A7D83ECE /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildConfigurationList = C4EEAF0DDCC9126859F0732D2D7DB80E /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				DC8579C657135E3C32AB580A48C6D524 /* Sources */,
-				FAB9E9D9BBDB93399D3C2B91469EC4B6 /* Frameworks */,
-				657D857047A6A935B5A2E9BD049194F2 /* Headers */,
+				9B161C406D1F749611C7D4F31219C902 /* Sources */,
+				25C5CBA423C5F887227E853C5DE08C56 /* Frameworks */,
+				0B7E4D2F03C38F66DC77B63F27AC9213 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1111,23 +1138,6 @@
 			name = Masonry;
 			productName = Masonry;
 			productReference = 61F55A7B6CFEC85C09A9D925B971B8A6 /* libMasonry.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		78C5AD119F12845865EEB2FCA5119A5F /* BATabBarController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B44C9FD0654E5B9ABE13187E7887EC42 /* Build configuration list for PBXNativeTarget "BATabBarController" */;
-			buildPhases = (
-				F059C65CAE6DC5E31E7991959E37FFF7 /* Sources */,
-				9F4F9A69C74A856D0BEEDC0506157537 /* Frameworks */,
-				A6C9033EEF93EDE18CBB3FBDEE779841 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BATabBarController;
-			productName = BATabBarController;
-			productReference = 217E97651BF4894B3296B19D140EE3EF /* libBATabBarController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		87E783055353AA3C70FC2C6C88976008 /* Pods-BATabBarController_Tests */ = {
@@ -1206,11 +1216,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				78C5AD119F12845865EEB2FCA5119A5F /* BATabBarController */,
+				1D06D12359705921944C33726CEDC077 /* BATabBarController */,
 				2F501FE84845EAD97B9087DAFCBBEE0E /* Expecta */,
 				1C3C92047035D6CA8A981CA69D8E2D21 /* Expecta+Snapshots */,
 				BF1B51C409204DDABC920011A94B2EEC /* FBSnapshotTestCase */,
-				53480ED0BE09FF49E34B1702D485CAAB /* Masonry */,
+				5FEAFD4B939B9CCFD60C49F6512995C0 /* Masonry */,
 				BFE2F029F36F9EA1363F88DB1B76E9E7 /* Pods-BATabBarController_Example */,
 				87E783055353AA3C70FC2C6C88976008 /* Pods-BATabBarController_Tests */,
 				2925B4A18124BA74F21143C0D1A487DD /* Specta */,
@@ -1277,6 +1287,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7BDB6478B95232C8BCD086DFDC5E4E03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44B54DB612E733A54ACA1E8D2AE83646 /* BATabBar.m in Sources */,
+				BD2435EDB623FF571FFBE64CC0C2428E /* BATabBarController-dummy.m in Sources */,
+				CF04A0B52579FB9C872CF4DDCC0CC1F9 /* BATabBarController.m in Sources */,
+				9432EA0C28AC375540C5B2ED9DA2F349 /* BATabBarItem.m in Sources */,
+				C417D1A8F5181E539095DFC1D00BABF9 /* UIColor+ColorWithHex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9299CAB77D248154ED5738EC3E196996 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1289,6 +1311,24 @@
 				3A3F51A92B074CEEE3D06B3B392FEBEC /* UIImage+Compare.m in Sources */,
 				FD0F8A41410558CC1CAD0FB1F776879B /* UIImage+Diff.m in Sources */,
 				A21B16DDE880B9A142F205D4C4E8023E /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B161C406D1F749611C7D4F31219C902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BCDF512A994E1D2AF64A65994EAB33 /* MASCompositeConstraint.m in Sources */,
+				87FEF0A2D57C289DC3BF92089E12EDEB /* MASConstraint.m in Sources */,
+				9D7F8C30DDF2B3EC92497987C1662835 /* MASConstraintMaker.m in Sources */,
+				E781E073B16A976B978CFACCDC6855F8 /* MASLayoutConstraint.m in Sources */,
+				026D296FF54A3AB43E4D975A298AC4B7 /* Masonry-dummy.m in Sources */,
+				17A9BCC24A490C93AB72A2D97A9EF3BD /* MASViewAttribute.m in Sources */,
+				CE5228EC43D740F700D9F18C0CD73377 /* MASViewConstraint.m in Sources */,
+				2AF132B91BA2311974C53D7EAA0489A4 /* NSArray+MASAdditions.m in Sources */,
+				CA9ED50926CDBDB5A74ACE80AC402984 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				1CF63668EADB1BD9FDB78C7DB098CE9F /* View+MASAdditions.m in Sources */,
+				4AD0B8823100F6B28F7DC675EF010F79 /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1320,39 +1360,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC8579C657135E3C32AB580A48C6D524 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCD4B362C6194513150915437754E2D4 /* MASCompositeConstraint.m in Sources */,
-				BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */,
-				335DCBC17D2469F228020EF6C7B41F7C /* MASConstraintMaker.m in Sources */,
-				BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */,
-				81599471BAB0420D54E1ADF8507A5113 /* Masonry-dummy.m in Sources */,
-				A44AF130E4C5313CD193D9BF68853026 /* MASViewAttribute.m in Sources */,
-				E6B49FBCE3957DB67F691ACCC4CAF4BE /* MASViewConstraint.m in Sources */,
-				5457FCC2699281B5A4203BA1559F593F /* NSArray+MASAdditions.m in Sources */,
-				D3D9F12613E23AD64C1FA5F7081A3668 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				81403CAF6C4C1D3DC8B199289C3A6F59 /* View+MASAdditions.m in Sources */,
-				AF62B956405F7734F5A9B8F3FD4B1B96 /* ViewController+MASAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F059C65CAE6DC5E31E7991959E37FFF7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF838B10DB32B762F8E4DFDC98001492 /* BATabBar.m in Sources */,
-				6447CA1056CC1618CD6AB00095B19CF3 /* BATabBarController-dummy.m in Sources */,
-				A7BC34BE343CBF897B7FCF3F83900A1F /* BATabBarController.m in Sources */,
-				8E56354601AC3BBFA7292DBF8DDBE059 /* BATabBarItem.m in Sources */,
-				CD4EE64FECBAD56A8AD2F43832548C38 /* UIColor+ColorWithHex.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1835327686BFF4EE416241D66A4DF3BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 5FEAFD4B939B9CCFD60C49F6512995C0 /* Masonry */;
+			targetProxy = 57BC706ABA7AF0C3E254C7C4D617B2D8 /* PBXContainerItemProxy */;
+		};
 		409FD8A94C76834258369CB6621031CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Expecta;
@@ -1380,7 +1396,7 @@
 		6460189AC263D9F9DA086EFEB12DFBD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BATabBarController;
-			target = 78C5AD119F12845865EEB2FCA5119A5F /* BATabBarController */;
+			target = 1D06D12359705921944C33726CEDC077 /* BATabBarController */;
 			targetProxy = B6AD7C854A138EF41DC8B1BD9B13C8CF /* PBXContainerItemProxy */;
 		};
 		70CFAF7B844F6BF45A5FC234181D8F23 /* PBXTargetDependency */ = {
@@ -1404,7 +1420,7 @@
 		FB356082711373914F407D77E4781DF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
-			target = 53480ED0BE09FF49E34B1702D485CAAB /* Masonry */;
+			target = 5FEAFD4B939B9CCFD60C49F6512995C0 /* Masonry */;
 			targetProxy = 71E71919C1121656C5CBC46AA3B8E46B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1417,7 +1433,6 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1453,6 +1468,69 @@
 			};
 			name = Debug;
 		};
+		05651F9D567D94E2C058C2BF0B5E0089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 356D5528E8B93B39CC3864F40692EADC /* Masonry.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0656F9CA5F62B27DDF9DAD1B53871FEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 356D5528E8B93B39CC3864F40692EADC /* Masonry.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0A6C1911A0D3BA83579F8CBBD91E09DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		1C4E4899BE01820151368B07EB14F4A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 847B4795DAF628340D3868B7F454E329 /* Expecta.xcconfig */;
@@ -1473,48 +1551,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		27283EFF716CC2633416AA869927CF55 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2DAE732D13CB652A1ECC83370B3C00E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 356D5528E8B93B39CC3864F40692EADC /* Masonry.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		3460B72966F4DF8D9C8EFA494BE1AD84 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1557,27 +1593,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		47CC7E036025141E6F4BAE9EF2E06FFF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		49A583BA7978E700D7F0CA98F57621D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1684,16 +1699,16 @@
 			};
 			name = Debug;
 		};
-		903FBF203C5658B140DF3CBEF5D2090D /* Release */ = {
+		C02E3B61846709C33E0B98916677FF7A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 356D5528E8B93B39CC3864F40692EADC /* Masonry.xcconfig */;
+			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1712,7 +1727,6 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1876,6 +1890,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9157AADC8E64AA6821CC422D00A013C2 /* Build configuration list for PBXNativeTarget "BATabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A6C1911A0D3BA83579F8CBBD91E09DA /* Debug */,
+				C02E3B61846709C33E0B98916677FF7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AA82A3E9FFFD0FF9F3C5FB7CCBE69F17 /* Build configuration list for PBXNativeTarget "Specta" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1885,20 +1908,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B44C9FD0654E5B9ABE13187E7887EC42 /* Build configuration list for PBXNativeTarget "BATabBarController" */ = {
+		C4EEAF0DDCC9126859F0732D2D7DB80E /* Build configuration list for PBXNativeTarget "Masonry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47CC7E036025141E6F4BAE9EF2E06FFF /* Debug */,
-				27283EFF716CC2633416AA869927CF55 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B6653DB75D219E078020C341A7D83ECE /* Build configuration list for PBXNativeTarget "Masonry" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2DAE732D13CB652A1ECC83370B3C00E5 /* Debug */,
-				903FBF203C5658B140DF3CBEF5D2090D /* Release */,
+				05651F9D567D94E2C058C2BF0B5E0089 /* Debug */,
+				0656F9CA5F62B27DDF9DAD1B53871FEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
