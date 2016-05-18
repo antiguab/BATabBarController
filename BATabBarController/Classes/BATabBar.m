@@ -115,7 +115,8 @@ static int * const BAUniqueTag = 57690;
 - (void) customInit {
     
     //set default properties
-    self.barItemStrokeColor = [UIColor colorWithHex:0xe53935];
+    self.barItemStrokeColor = [UIColor colorWithHex:0xF23555];
+    self.backgroundColor = [UIColor colorWithHex:0x1C2129];
     self.barItemLineWidth = 2;
     
     //create container for animations

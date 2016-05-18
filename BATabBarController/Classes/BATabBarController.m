@@ -42,7 +42,6 @@
     if (self) {
         // init tab bar
         self.tabBar = [[BATabBar alloc] init];
-        self.tabBar.backgroundColor = [UIColor whiteColor];
         self.tabBar.delegate = self;
         [self.view addSubview:self.tabBar];
     }

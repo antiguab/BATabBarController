@@ -102,10 +102,10 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
         self.vc = [[BATabBarController alloc] init];
         
         //tab bar background color example
-        self.vc.tabBarBackgroundColor = [UIColor colorWithHex:0x1C2129];
+//        self.vc.tabBarBackgroundColor = [UIColor colorWithHex:0x1C2129];
         
         //tab bar item stroke color example
-        self.vc.tabBarItemStrokeColor = [UIColor colorWithHex:0xF23555];
+//        self.vc.tabBarItemStrokeColor = [UIColor colorWithHex:0xF23555];
         
         //Tab bar line width exampe
         //self.vc.tabBarItemLineWidth = 1.0;
