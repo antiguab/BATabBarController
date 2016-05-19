@@ -43,8 +43,12 @@ describe(@"BATabBar", ^{
     });
     
     //(void) customInit
+    it(@"should have a default backgroundColor Property", ^{
+        expect(tabBar.backgroundColor).to.equal([UIColor colorWithHex:0x1C2129]);
+    });
+    
     it(@"should have a default barItemStrokeColor Property", ^{
-        expect(tabBar.barItemStrokeColor).to.equal([UIColor colorWithHex:0xe53935]);
+        expect(tabBar.barItemStrokeColor).to.equal([UIColor colorWithHex:0xF23555]);
     });
     
     it(@"should have a default barItemLineWidth Property", ^{

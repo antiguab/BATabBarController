@@ -25,7 +25,7 @@
 #import "UIColor+ColorWithHex.h"
 #import "Masonry.h"
 
-static int * const BAUniqueTag = 57690;
+static NSInteger const BAUniqueTag = 57690;
 
 @interface BATabBar()
 
