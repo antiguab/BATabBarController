@@ -127,7 +127,7 @@ result:
 To change the color of the stroke in the animation, you can change the `tabBarItemStrokeColor` property of the `BATabBarController` instance.
 
 ```objc
-baTabBarController.tabBarItemStrokeColor = [UIColor greenColor];
+baTabBarController.tabBarItemStrokeColor = [UIColor blueColor];
 ```
 result:
 <br/>
