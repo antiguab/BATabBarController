@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BATabBarController: fc268e3bfbecc8a8b72f20117aae6b2460734cef
+  BATabBarController: e9610e3fe812ffc29ceb56ecc7ae071936f29189
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
   FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d

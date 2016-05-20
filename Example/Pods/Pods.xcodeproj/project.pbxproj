@@ -1510,27 +1510,6 @@
 			};
 			name = Release;
 		};
-		0A6C1911A0D3BA83579F8CBBD91E09DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		1C4E4899BE01820151368B07EB14F4A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 847B4795DAF628340D3868B7F454E329 /* Expecta.xcconfig */;
@@ -1678,6 +1657,27 @@
 			};
 			name = Debug;
 		};
+		6172E1FB746D95423F5049D636909135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		75785184A9BA63278DA49B3D573D9B4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A517091F54F0341949BD5218D0227A0D /* Pods-BATabBarController_Tests.debug.xcconfig */;
@@ -1698,27 +1698,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		C02E3B61846709C33E0B98916677FF7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1778,6 +1757,27 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		D5C1983E6E514228383A81608ED9AE4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BATabBarController/BATabBarController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		ECEE78EC14E3A32C222AAAFD79380C86 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1893,8 +1893,8 @@
 		9157AADC8E64AA6821CC422D00A013C2 /* Build configuration list for PBXNativeTarget "BATabBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A6C1911A0D3BA83579F8CBBD91E09DA /* Debug */,
-				C02E3B61846709C33E0B98916677FF7A /* Release */,
+				D5C1983E6E514228383A81608ED9AE4F /* Debug */,
+				6172E1FB746D95423F5049D636909135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
