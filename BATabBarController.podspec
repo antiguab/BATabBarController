@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BATabBarController"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A TabBarController with a unique animation for selection"
   s.description      = <<-DESC
                       The standard TabBarController is very limited in terms of animations when you make a selection.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author           = { "Bryan Antigua" => "antigua.b@gmail.com" }
   s.source           = { :git => "https://github.com/antiguab/BATabBarController.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/brantigua'
-  s.platform         = :ios, 9.0
+  s.platform         = :ios, 8.1
   s.requires_arc     = true
   s.source_files = 'BATabBarController/Classes/**/*'
   s.frameworks = 'UIKit'

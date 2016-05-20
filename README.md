@@ -15,7 +15,7 @@ The standard TabBarController is very limited in terms of animations when you ma
 <br/>
 
 ## Requirements
-* Works on any iOS device
+* iOS 8+ iPhone, iPad and iPod Touch devices
 
 <br/>
 
@@ -141,11 +141,14 @@ To change the size of the stroke in the animation, you can change the `tabBarIte
 baTabBarController.tabBarItemLineWidth = 1.0;
 ```
 
-result: 
+result:
 <br/>
 <img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example5.png" width="50%" />
 
 ## ChangeLog
+#### Version 0.1.1 (05.20.2016)
+- Platform version supports 8.1+
+
 #### Version 0.1.0 (05.18.2016)
 - Initial release
 
