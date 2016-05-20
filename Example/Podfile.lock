@@ -1,5 +1,5 @@
 PODS:
-  - BATabBarController (0.1.0):
+  - BATabBarController (0.1.1):
     - Masonry
   - Expecta (1.0.5)
   - Expecta+Snapshots (3.0.0):
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BATabBarController: e9610e3fe812ffc29ceb56ecc7ae071936f29189
+  BATabBarController: 74d4bcd786dbbde023d544ce6000b5f5158c06d1
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
   FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d

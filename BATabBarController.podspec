@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BATabBarController"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A TabBarController with a unique animation for selection"
   s.description      = <<-DESC
                       The standard TabBarController is very limited in terms of animations when you make a selection.
