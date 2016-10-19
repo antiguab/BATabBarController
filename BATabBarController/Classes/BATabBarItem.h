@@ -21,6 +21,7 @@
 //SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "BATabBarBadge.h"
 
 
 @interface BATabBarItem : UIButton
@@ -54,6 +55,11 @@ UIView that houses the selected/unselected icons
  Image view for a selected tab
  */
 @property (nonatomic,strong) UIImageView *selectedImageView;
+
+/**
+ An optional badge to display in the top right corner
+ */
+@property (strong, nonatomic) BATabBarBadge *badge;
 
 /**
  Custom init

@@ -102,6 +102,14 @@ static double const BAIconPaddingWithText = -25.0;
         make.height.equalTo(self.innerTabBarItem.mas_width);
     }];
     
+
+    [self.badge mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.mas_centerX).offset(self.bounds.size.width / 2 + self.badge.bounds.size.width / 2);
+        make.top.equalTo(self.mas_top).offset(BAOutlinePadding / 2);
+        make.width.equalTo(@(self.badge.bounds.size.width));
+        make.height.equalTo(@(self.badge.bounds.size.height));
+    }];
+    
     [super updateConstraints];
 }
 
@@ -186,6 +194,21 @@ static double const BAIconPaddingWithText = -25.0;
         }];
         
     }
+}
+
+#pragma mark - Accessors
+
+- (void) setBadge:(BATabBarBadge *)badge {
+    
+    if (self.badge) {
+        [self.badge removeFromSuperview];
+    }
+    
+    self->_badge = badge;
+    
+    [self addSubview:badge];
+    
+    [self setNeedsUpdateConstraints];
 }
 
 #pragma mark - Public
