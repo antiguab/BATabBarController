@@ -100,6 +100,22 @@ This creates the following:
 <img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example2.png" width="50%" />
 
 
+### Badges
+
+Badges can be created with the `BATabBarBadge` class. After creating a badge you can simply assign it to the `.badge` property of a `BATabBarItem`:
+
+``` Objective-c
+BATabBarBadge *badge = [[BATabBarBadge alloc] initWithValue:@8 backgroundColor:[UIColor redColor]];
+tabBarItem.badge = badge;
+
+BATabBarBadge *badge3 = [[BATabBarBadge alloc] initWithValue:@8234 backgroundColor:[UIColor redColor]];
+tabBarItem3.badge = badge3;
+```
+
+This creates the following:
+<img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example6.png" width="50%" />
+
+
 ##Methods
 ###Set Selected View Controller
 You can change the currently selected tab bar item programatically by using the method below. To avoid
