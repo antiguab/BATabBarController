@@ -21,12 +21,8 @@
 //SOFTWARE.
 
 #import "BATabBarBadge.h"
-//#import "UIColor+ColorWithHex.h"
-//#import "BATestUtil.h"
-
 
 SpecBegin(BATabBarBadge)
-
 
 describe(@"BATabBarBadge", ^{
     __block BATabBarBadge *tabBarBadge;
