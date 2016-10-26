@@ -24,6 +24,7 @@
 #import "BATabBarController.h"
 #import "UIColor+ColorWithHex.h"
 #import "BATabBarItem.h"
+#import "BATabBarBadge.h"
 
 typedef NS_ENUM(NSInteger, BATabBarType) {
     BATabBarTypeWithText,
@@ -71,6 +72,9 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
                 
                 tabBarItem = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon1_unselected"] selectedImage:[UIImage imageNamed:@"icon1_selected"] title:option1];
                 
+                BATabBarBadge *badge = [[BATabBarBadge alloc] initWithValue:@22 backgroundColor:[UIColor redColor]];
+                tabBarItem.badge = badge;
+                
                 NSMutableAttributedString *option2 = [[NSMutableAttributedString alloc] initWithString:@"Home"];
                 [option2 addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithHex:0xF0F2F6] range:NSMakeRange(0,option2.length)];
                 
@@ -85,9 +89,17 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
             case BATabBarTypeNoText: {
                 tabBarItem = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon1_unselected"] selectedImage:[UIImage imageNamed:@"icon1_selected"]];
                 
+                BATabBarBadge *badge = [[BATabBarBadge alloc] initWithValue:@8 backgroundColor:[UIColor redColor]];
+                tabBarItem.badge = badge;
+                
                 tabBarItem2 = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon2_unselected"] selectedImage:[UIImage imageNamed:@"icon2_selected"]];
                 
                 tabBarItem3 = [[BATabBarItem alloc] initWithImage:[UIImage imageNamed:@"icon3_unselected"] selectedImage:[UIImage imageNamed:@"icon3_selected"]];
+                
+                BATabBarBadge *badge3 = [[BATabBarBadge alloc] initWithValue:@8234 backgroundColor:[UIColor redColor]];
+                tabBarItem3.badge = badge3;
+
+                
                 break;
             }
                 
