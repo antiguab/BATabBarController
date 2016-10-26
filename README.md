@@ -113,6 +113,7 @@ tabBarItem3.badge = badge3;
 ```
 
 This creates the following:
+
 <img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example6.png" width="50%" />
 
 
@@ -162,6 +163,9 @@ result:
 <img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/example5.png" width="50%" />
 
 ## ChangeLog
+#### Version 0.1.3 (10.23.2016)
+- Added ability to have badge icons (thanks to @terhechte)
+
 #### Version 0.1.2 (06.21.2016)
 - Platform version supports 8.0+
 
