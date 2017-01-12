@@ -6,8 +6,8 @@ PODS:
     - Expecta (~> 1.0)
     - FBSnapshotTestCase/Core (~> 2.0)
     - Specta (~> 1.0)
-  - FBSnapshotTestCase/Core (2.1.0)
-  - Masonry (1.0.0)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - Masonry (1.0.2)
   - Specta (1.0.5)
 
 DEPENDENCIES:
@@ -19,16 +19,16 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   BATabBarController:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   BATabBarController: b198a0530fff9233450ed35f43a96431e0815d31
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
-  FBSnapshotTestCase: 366ecd378511d7716c79991cd8067d1eed23578d
-  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
-PODFILE CHECKSUM: e27aacb833b1c54c4daa32e1b449fc47637c3d10
+PODFILE CHECKSUM: cf002e7a0707b833596a4c707ebad162447a2776
 
 COCOAPODS: 1.1.1

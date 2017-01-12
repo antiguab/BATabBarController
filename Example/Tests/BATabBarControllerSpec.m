@@ -46,6 +46,11 @@ describe(@"BATabBarController Logical Tests", ^{
     });
     
     
+    it(@"should have a BATabBar Property", ^{
+        expect(controller.tabBar).toNot.beNil();
+    });
+
+    
     it(@"should have a viewController Property", ^{
         
         NSArray* viewControllers = [BATestUtil createViewControllers];
@@ -170,6 +175,16 @@ describe(@"BATabBarController UI Tests", ^{
             expect(controller).will.haveValidSnapshotNamed(@"tabBarWithLargerStrokeWithText");
         });
         
+        it(@"should hide the tab bar when hidesBottomBarWhenPushed is YES", ^{
+            controller.hidesBottomBarWhenPushed = YES;
+            expect(controller).will.haveValidSnapshotNamed(@"tabBarHidden");
+        });
+        
+        it(@"should hide the tab bar when tabBar.hidden is YES", ^{
+            controller.tabBar.hidden = YES;
+            expect(controller).will.haveValidSnapshotNamed(@"tabBarHidden");
+        });
+        
     });
     
     describe(@"With Only icons", ^{
@@ -230,6 +245,16 @@ describe(@"BATabBarController UI Tests", ^{
         it(@"should have a larger stroke on the selected item", ^{
             controller.tabBarItemLineWidth = 5.0;
             expect(controller).will.haveValidSnapshotNamed(@"tabBarWithLargerStrokeWithoutText");
+        });
+        
+        it(@"should hide the tab bar when hidesBottomBarWhenPushed is YES", ^{
+            controller.hidesBottomBarWhenPushed = YES;
+            expect(controller).will.haveValidSnapshotNamed(@"tabBarHidden");
+        });
+        
+        it(@"should hide the tab bar when tabBar.hidden is YES", ^{
+            controller.tabBar.hidden = YES;
+            expect(controller).will.haveValidSnapshotNamed(@"tabBarHidden");
         });
         
     });

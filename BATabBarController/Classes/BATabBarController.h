@@ -30,6 +30,11 @@
 
 
 /**
+ Custom tab bar
+ */
+@property (nonatomic, strong) BATabBar* tabBar;
+
+/**
  View controllers associated with the tabs
  */
 @property (strong, nonatomic) NSArray<__kindof UIViewController *> *viewControllers;
@@ -64,6 +69,12 @@
  Currently selected view controller
  */
 @property (strong, nonatomic) UIViewController* selectedViewController;
+
+
+/**
+ Hides the bar when pushed
+ */
+@property (nonatomic) bool hidesBottomBarWhenPushed;
 
 /**
  Set the view controller that will initally be in the selected state, and animates to that state if desired

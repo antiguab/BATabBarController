@@ -25,11 +25,6 @@
 #import "BATabBarItem.h"
 #import "Masonry.h"
 
-@interface BATabBarController()
-
-@property (nonatomic, strong) BATabBar* tabBar;
-
-@end
 
 @implementation BATabBarController
 
@@ -40,6 +35,10 @@
     self = [super init];
     
     if (self) {
+        
+        //default values
+        _hidesBottomBarWhenPushed = NO;
+
         // init tab bar
         self.tabBar = [[BATabBar alloc] init];
         self.tabBar.delegate = self;
@@ -93,6 +92,11 @@
     
     _tabBarItems = tabBarItems;
     self.tabBar.tabBarItems = tabBarItems;
+}
+
+- (void)setHidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed {
+    _hidesBottomBarWhenPushed = hidesBottomBarWhenPushed;
+    self.tabBar.hidden = hidesBottomBarWhenPushed;
 }
 
 - (void)setTabBarBackgroundColor:(UIColor *)tabBarBackgroundColor {

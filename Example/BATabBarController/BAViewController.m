@@ -120,6 +120,11 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
         //Tab bar line width example
 //        self.vc.tabBarItemLineWidth = 1.0;
         
+        //Hides the tab bar when true
+//        self.vc.hidesBottomBarWhenPushed = YES;
+//        self.vc.tabBar.hidden = YES;
+
+
         self.vc.viewControllers = @[vc1,vc2,vc3];
         self.vc.tabBarItems = @[tabBarItem,tabBarItem2,tabBarItem3];
         [self.vc setSelectedViewController:vc2 animated:NO];
