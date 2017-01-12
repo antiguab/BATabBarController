@@ -266,23 +266,23 @@
 		04E871A275CA96EF722D0B23ACDDBBCE /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
 		060B412B173A4D9A8DEE342D213C581F /* Pods-BATabBarController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BATabBarController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		089EA15B1759F253798A525447CA591F /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
-		08A123F9430BFC88240D34A5559AD140 /* libSpecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSpecta.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A123F9430BFC88240D34A5559AD140 /* libSpecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSpecta.a; path = libSpecta.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E3D8C990F97108C8767D28783C10CB /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
 		09891F1D60E2D07B41D42D0CB0D50B9C /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
 		09CA44EA0E32CABD4DB7221C60F1D81D /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
 		0E496C2E8F5310CCD9757EFC3961482B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		116C20A9668A63F3F039B8F9E435B298 /* libExpecta+Snapshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libExpecta+Snapshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		116C20A9668A63F3F039B8F9E435B298 /* libExpecta+Snapshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libExpecta+Snapshots.a"; path = "libExpecta+Snapshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12161289EBDDCB43D7048D2D5565A315 /* UIColor+ColorWithHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorWithHex.h"; sourceTree = "<group>"; };
 		142E01D520F35DD17B620673469BAF67 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
 		14B52B985A6FFE5066E8CF582578C9E5 /* Pods-BATabBarController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BATabBarController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		17A3E2980D3B61BC27B3052BA303CBD4 /* libPods-BATabBarController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BATabBarController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A3E2980D3B61BC27B3052BA303CBD4 /* libPods-BATabBarController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BATabBarController_Tests.a"; path = "libPods-BATabBarController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B05BED0715E23BF41EAA8E39AC3A52 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
 		1805F66F74F847F581ED432B52A14C67 /* BATabBarBadge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BATabBarBadge.m; sourceTree = "<group>"; };
 		1A1E26AFBAEF9C1DBA4C780FE53A219E /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
 		1C4AD539C39A961641DE211F1EC69F28 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
 		1C77C9B7BABDDB0D9A55399586E07D30 /* Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Specta.xcconfig; sourceTree = "<group>"; };
 		20A057681AA44D35D89A0F0FECC68077 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		217E97651BF4894B3296B19D140EE3EF /* libBATabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBATabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		217E97651BF4894B3296B19D140EE3EF /* libBATabBarController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBATabBarController.a; path = libBATabBarController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22715D5ED68DAF144049BCD76614C84F /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
 		2753BBB1AB8C8CF0159B52EDAB074DED /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
 		278DE1F726EF042239D2E6EA33F975B8 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
@@ -307,7 +307,7 @@
 		41373F5EDDDCE78B7743BCB2BDECF1AB /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		48428F943A272F7270331F8C5BC744EC /* BATabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BATabBarController-dummy.m"; sourceTree = "<group>"; };
 		4B1734F8109DFA480B3F956AAE2DB122 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
-		4BB19288DC272641487D2662B21F6E26 /* libPods-BATabBarController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BATabBarController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BB19288DC272641487D2662B21F6E26 /* libPods-BATabBarController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-BATabBarController_Example.a"; path = "libPods-BATabBarController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C7BC0352DD89317F4E35800388E3E68 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
 		4D900D0F08443DEA017AD48D7302199B /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
 		4D9D6F31D63BC5A6F63A69935B5DDD65 /* BATabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BATabBar.m; sourceTree = "<group>"; };
@@ -320,7 +320,7 @@
 		5E7B584CF3498F776EC97AF9743BCDBD /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
 		5EF34D10F36D6B645B46539AB473C062 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
 		6100C40292B27DB46B36489D64CE98BC /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		61F55A7B6CFEC85C09A9D925B971B8A6 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F55A7B6CFEC85C09A9D925B971B8A6 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		636E8CBEB03E9051E79D4A53A5B7880E /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
 		6397F1E6941BBAA7B874B8492AE0D4E8 /* EXPMatchers+FBSnapshotTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+FBSnapshotTest.m"; sourceTree = "<group>"; };
 		64F5CF645337730491E4C0FAB1ECCD8D /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
@@ -363,7 +363,7 @@
 		8C0B04648C967016992B2E627A98DBD7 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		8C4CA215E50893D5B92EE534160A036B /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
 		8F8B7F7D2D040F530D7D3E95B5445F8F /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97139FF521C6E9F0C6CE8A11E915C381 /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
 		971A25F0E310AB30471FBE429852F8E9 /* Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Expecta-dummy.m"; sourceTree = "<group>"; };
 		9751F9DCCF34DF289A2F5FB3272314AC /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
@@ -378,7 +378,7 @@
 		9DC3AC8A866816939F477E144FE21EA1 /* Pods-BATabBarController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BATabBarController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A0B994B6945EAAC37B86FE4F4A14C933 /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
 		A0D6282C36B0F64B422353E3C65E4398 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
-		A240E77995379AE56D4F92CC71BC3015 /* libExpecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExpecta.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A240E77995379AE56D4F92CC71BC3015 /* libExpecta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libExpecta.a; path = libExpecta.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A517091F54F0341949BD5218D0227A0D /* Pods-BATabBarController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BATabBarController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A58E88A6097BA80BDF7C76DEEA38236A /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
 		A698298462C0593A484EAAEED6EDAE60 /* UIColor+ColorWithHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorWithHex.m"; sourceTree = "<group>"; };
@@ -394,7 +394,7 @@
 		B1852EA53822091CFC6467D46BEC9989 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
 		B18DD9EF4CBBA79A7A9FF9A5C26EE584 /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
 		B690E951F0F8712F12B54766884A78AE /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
-		B79761DDE80692D656AA6F7FEEF2A198 /* libFBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFBSnapshotTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B79761DDE80692D656AA6F7FEEF2A198 /* libFBSnapshotTestCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSnapshotTestCase.a; path = libFBSnapshotTestCase.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92B10A0C70F09961C34D8B138760380 /* Pods-BATabBarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BATabBarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BA639094D8282D11F542167AE6867D11 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
 		BA6E9838018623423A78FD8E9B77DDCF /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
@@ -546,6 +546,7 @@
 			children = (
 				AD3DFCD1F286C975C9B8BC3F37AB7C1F /* Classes */,
 			);
+			name = BATabBarController;
 			path = BATabBarController;
 			sourceTree = "<group>";
 		};
@@ -644,6 +645,7 @@
 				EDE079BC1B1CD4C94D13A3DDF7001FBF /* XCTestCase+Specta.m */,
 				74172A8E6D3781B705C30F24E96115E2 /* Support Files */,
 			);
+			name = Specta;
 			path = Specta;
 			sourceTree = "<group>";
 		};
@@ -747,6 +749,7 @@
 				981EE52F808E757220D8A179B13114D0 /* ViewController+MASAdditions.m */,
 				CBCED12FB00798E4AE7A076E5A04DDDF /* Support Files */,
 			);
+			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -776,8 +779,8 @@
 			children = (
 				70A5916729F90F57970ECA0151E64CCC /* BATabBar.h */,
 				4D9D6F31D63BC5A6F63A69935B5DDD65 /* BATabBar.m */,
-				1805F66F74F847F581ED432B52A14C67 /* BATabBarBadge.m */,
 				037C50BDE8F8C6D285A563107849B99F /* BATabBarBadge.h */,
+				1805F66F74F847F581ED432B52A14C67 /* BATabBarBadge.m */,
 				5959D1BD9DC4AFC29FDDBCB431035956 /* BATabBarController.h */,
 				7209697530DC554D78B4BF20B1D06CEF /* BATabBarController.m */,
 				DC436FA787D8BF75DAAF3C5F7EFB23C2 /* BATabBarItem.h */,
@@ -785,6 +788,7 @@
 				12161289EBDDCB43D7048D2D5565A315 /* UIColor+ColorWithHex.h */,
 				A698298462C0593A484EAAEED6EDAE60 /* UIColor+ColorWithHex.m */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -797,6 +801,7 @@
 				6397F1E6941BBAA7B874B8492AE0D4E8 /* EXPMatchers+FBSnapshotTest.m */,
 				829D9F11C9433F25BECC2F0276E5B66E /* Support Files */,
 			);
+			name = "Expecta+Snapshots";
 			path = "Expecta+Snapshots";
 			sourceTree = "<group>";
 		};
@@ -817,6 +822,7 @@
 				8F960913C56ADF6319DE1D9C9A9FA0C2 /* Core */,
 				ABA58CB51E5018B2298B97F65FF64073 /* Support Files */,
 			);
+			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -913,6 +919,7 @@
 				7EAEB68F14ED49EA398AF15355690B3F /* NSValue+Expecta.m */,
 				21DF99C75675295D308EA9A1392FBA62 /* Support Files */,
 			);
+			name = Expecta;
 			path = Expecta;
 			sourceTree = "<group>";
 		};
@@ -1434,19 +1441,63 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2475A91CD75698AF7C5B16E7138E5F47 /* Debug */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A517091F54F0341949BD5218D0227A0D /* Pods-BATabBarController_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		043E9A22EB22CCAB785C638485AA7FA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4D05BC6AE2C242BF59DA8496324FF59 /* Pods-BATabBarController_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1455,7 +1506,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		2575BC4C17CFB9FD1370518CDB44CFCB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1502,52 +1553,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		283053F48625D3EC785D3CBD19D2D82E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4D05BC6AE2C242BF59DA8496324FF59 /* Pods-BATabBarController_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2B914B65B798F57061867F1E614E04E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14B52B985A6FFE5066E8CF582578C9E5 /* Pods-BATabBarController_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		2D51BAF19D4B07805BFE2C5CFA744C5C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1641,6 +1646,46 @@
 			};
 			name = Debug;
 		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		45D87416B81E64128FEB2D4BD446CB56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6CEE420FF0AB9D7522369144FC2955DA /* BATabBarController.xcconfig */;
@@ -1664,53 +1709,9 @@
 			};
 			name = Release;
 		};
-		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+		6BF32747CFA42F1FE6FE77994C0E2435 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		87F22BF32A258CE90D7AB12800E14DC2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B92B10A0C70F09961C34D8B138760380 /* Pods-BATabBarController_Example.debug.xcconfig */;
+			baseConfigurationReference = A517091F54F0341949BD5218D0227A0D /* Pods-BATabBarController_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1718,7 +1719,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -1800,43 +1801,26 @@
 			};
 			name = Debug;
 		};
-		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+		BDD5BE30BFA84F387AA05227A39D4E28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B52B985A6FFE5066E8CF582578C9E5 /* Pods-BATabBarController_Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -1862,6 +1846,29 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
+		};
+		C97BD40633DBD7370EF4450B126BADF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92B10A0C70F09961C34D8B138760380 /* Pods-BATabBarController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		CE8CFD74646E8AE423EAB2A25477CA71 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1901,8 +1908,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
-				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1910,8 +1917,8 @@
 		387851D4F03155ACF105EDABFFA6AF2C /* Build configuration list for PBXNativeTarget "Pods-BATabBarController_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2475A91CD75698AF7C5B16E7138E5F47 /* Debug */,
-				2B914B65B798F57061867F1E614E04E2 /* Release */,
+				6BF32747CFA42F1FE6FE77994C0E2435 /* Debug */,
+				BDD5BE30BFA84F387AA05227A39D4E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1937,8 +1944,8 @@
 		BA99137BAF7EA25FFDDBE5B0973BDD87 /* Build configuration list for PBXNativeTarget "Pods-BATabBarController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				87F22BF32A258CE90D7AB12800E14DC2 /* Debug */,
-				283053F48625D3EC785D3CBD19D2D82E /* Release */,
+				C97BD40633DBD7370EF4450B126BADF9 /* Debug */,
+				043E9A22EB22CCAB785C638485AA7FA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
