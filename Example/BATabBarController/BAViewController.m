@@ -129,7 +129,6 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
         self.vc.tabBarItems = @[tabBarItem,tabBarItem2,tabBarItem3];
         [self.vc setSelectedViewController:vc2 animated:NO];
         
-        
         self.vc.delegate = self;
         [self.view addSubview:self.vc.view];
         self.firstTime = NO;
@@ -137,10 +136,6 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
     }
 }
 
--(void)onTick:(NSTimer *)timer {
-    self.vc.hidesBottomBarWhenPushed = NO;
-
-}
 - (void)tabBarController:(BATabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     NSLog(@"Delegate success!");
 }
