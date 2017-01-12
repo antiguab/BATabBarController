@@ -74,7 +74,7 @@
 /**
  Hides the bar when pushed
  */
-@property (nonatomic) bool hidesBottomBarWhenPushed;
+@property (nonatomic) BOOL hidesBottomBarWhenPushed;
 
 /**
  Set the view controller that will initally be in the selected state, and animates to that state if desired
