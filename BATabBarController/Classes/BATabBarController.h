@@ -56,6 +56,11 @@
 @property (strong, nonatomic) UIColor* tabBarBackgroundColor;
 
 /**
+ Tab Bar Animation duration
+ */
+@property (assign, nonatomic) CGFloat tabBarAnimationDuration;
+
+/**
  TabBarItem's stroke color
  */
 @property (strong, nonatomic) UIColor* tabBarItemStrokeColor;

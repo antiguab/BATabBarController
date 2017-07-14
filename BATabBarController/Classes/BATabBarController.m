@@ -38,7 +38,7 @@
         
         //default values
         _hidesBottomBarWhenPushed = NO;
-
+        
         // init tab bar
         self.tabBar = [[BATabBar alloc] init];
         self.tabBar.delegate = self;
@@ -56,7 +56,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    //make sure we always have a selected tab 
+    //make sure we always have a selected tab
     if (!self.selectedViewController) {
         self.selectedViewController = [self.viewControllers objectAtIndex:0];
         [self.tabBar selectedTabItem:0 animated:NO];
@@ -102,6 +102,11 @@
 - (void)setTabBarBackgroundColor:(UIColor *)tabBarBackgroundColor {
     _tabBarBackgroundColor = tabBarBackgroundColor;
     self.tabBar.backgroundColor = tabBarBackgroundColor;
+}
+
+- (void)setTabBarAnimationDuration:(CGFloat)tabBarAnimationDuration {
+    _tabBarAnimationDuration = tabBarAnimationDuration;
+    self.tabBar.animationDuration = tabBarAnimationDuration;
 }
 
 - (void)setTabBarItemStrokeColor:(UIColor *)tabBarItemStrokeColor {

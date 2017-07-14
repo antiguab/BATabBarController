@@ -230,7 +230,7 @@ static NSInteger const BAUniqueTag = 57690;
     animatingTabTransitionLayer.path = animatingTabTransitionBezierPath.CGPath;
     
     CABasicAnimation *leadingAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    leadingAnimation.duration = 0.7;
+    leadingAnimation.duration = self.animationDuration;
     leadingAnimation.fromValue = @0;
     leadingAnimation.toValue = @1;
     leadingAnimation.removedOnCompletion = NO;
