@@ -118,6 +118,7 @@ static NSInteger const BAUniqueTag = 57690;
     self.barItemStrokeColor = [UIColor colorWithHex:0xF23555];
     self.backgroundColor = [UIColor colorWithHex:0x1C2129];
     self.barItemLineWidth = 2;
+    self.animationDuration = 0.7;
     
     //create container for animations
     self.container = [[UIView alloc] init];
