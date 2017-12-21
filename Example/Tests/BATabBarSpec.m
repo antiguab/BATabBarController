@@ -55,6 +55,10 @@ describe(@"BATabBar", ^{
         expect(tabBar.barItemLineWidth).to.equal(2);
     });
     
+    it(@"should have a default animationDuraton Property", ^{
+        expect(tabBar.animationDuration).to.equal(0.7);
+    });
+    
     it(@"should have a new barItemStrokeColor Property", ^{
         tabBar.barItemStrokeColor = [UIColor whiteColor];
         expect(tabBar.barItemStrokeColor).to.equal([UIColor whiteColor]);
@@ -63,6 +67,11 @@ describe(@"BATabBar", ^{
     it(@"should have a new barItemLineWidth Property", ^{
         tabBar.barItemLineWidth = 5;
         expect(tabBar.barItemLineWidth).to.equal(5);
+    });
+    
+    it(@"should have a new animationDuration Property", ^{
+        tabBar.animationDuration = 1;
+        expect(tabBar.animationDuration).to.equal(1);
     });
     
     //(void) updateTabBarItems:(NSArray*)tabBarItems

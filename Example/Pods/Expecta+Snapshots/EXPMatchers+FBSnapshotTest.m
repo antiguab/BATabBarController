@@ -18,14 +18,15 @@
     return instance;
 }
 
-+ (BOOL)compareSnapshotOfViewOrLayer:(id)viewOrLayer snapshot:(NSString *)snapshot testCase:(id)testCase record:(BOOL)record referenceDirectory:(NSString *)referenceDirectory error:(NSError **)error
++ (BOOL)compareSnapshotOfViewOrLayer:(id)viewOrLayer snapshot:(NSString *)snapshot testCase:(id)testCase record:(BOOL)record referenceDirectory:(NSString *)referenceDirectory tolerance:(CGFloat)tolerance error:(NSError **)error
 
 {
     FBSnapshotTestController *snapshotController = [[FBSnapshotTestController alloc] initWithTestClass:[testCase class]];
     snapshotController.recordMode = record;
     snapshotController.referenceImagesDirectory = referenceDirectory;
     snapshotController.usesDrawViewHierarchyInRect = [Expecta usesDrawViewHierarchyInRect];
-
+    snapshotController.deviceAgnostic = [Expecta isDeviceAgnostic];
+  
     if (! snapshotController.referenceImagesDirectory) {
         [NSException raise:@"Missing value for referenceImagesDirectory" format:@"Call [[EXPExpectFBSnapshotTest instance] setReferenceImagesDirectory"];
     }
@@ -33,7 +34,7 @@
     return [snapshotController compareSnapshotOfViewOrLayer:viewOrLayer
                                                    selector:NSSelectorFromString(snapshot)
                                                  identifier:nil
-                                                  tolerance:0
+                                                  tolerance:tolerance
                                                       error:error];
 }
 
@@ -79,18 +80,36 @@ void setGlobalReferenceImageDir(char *reference) {
     NSString *testFileName = [NSString stringWithCString:self.fileName encoding:NSUTF8StringEncoding];
     NSArray *pathComponents = [testFileName pathComponents];
 
-    for (NSString *folder in pathComponents) {
+    NSString *firstFolderFound = nil;
+
+    for (NSString *folder in pathComponents.reverseObjectEnumerator) {
         if ([folder.lowercaseString rangeOfString:@"tests"].location != NSNotFound) {
-
             NSArray *folderPathComponents = [pathComponents subarrayWithRange:NSMakeRange(0, [pathComponents indexOfObject:folder] + 1)];
-            return [NSString stringWithFormat:@"%@/ReferenceImages", [folderPathComponents componentsJoinedByString:@"/"]];
+            NSString *referenceImagesPath = [NSString stringWithFormat:@"%@/ReferenceImages", [folderPathComponents componentsJoinedByString:@"/"]];
 
+            if (!firstFolderFound) {
+                firstFolderFound = referenceImagesPath;
+            }
+
+            BOOL isDirectory = NO;
+            BOOL referenceDirExists = [[NSFileManager defaultManager] fileExistsAtPath:referenceImagesPath isDirectory:&isDirectory];
+
+            // if the folder exists, this is the reference dir for sure
+            if (referenceDirExists && isDirectory) {
+                return referenceImagesPath;
+            }
         }
+    }
+
+    // if a reference folder wasn't found, we should create one
+    if (firstFolderFound) {
+        return firstFolderFound;
     }
 
     [NSException raise:@"Could not infer reference image folder" format:@"You should provide a reference dir using setGlobalReferenceImageDir(FB_REFERENCE_IMAGE_DIR);"];
     return nil;
 }
+
 @end
 
 
@@ -114,11 +133,11 @@ NSString *sanitizedTestPath(){
     return name;
 }
 
-EXPMatcherImplementationBegin(haveValidSnapshot, (void)){
+EXPMatcherImplementationBegin(haveValidSnapshotWithTolerance, (CGFloat tolerance)){
     __block NSError *error = nil;
 
     prerequisite(^BOOL{
-        return actual;
+        return actual != nil;
     });
 
 
@@ -132,7 +151,7 @@ EXPMatcherImplementationBegin(haveValidSnapshot, (void)){
             actual = [actual view];
         }
 
-        return [EXPExpectFBSnapshotTest compareSnapshotOfViewOrLayer:actual snapshot:name testCase:[self testCase] record:NO referenceDirectory:referenceImageDir error:&error];
+        return [EXPExpectFBSnapshotTest compareSnapshotOfViewOrLayer:actual snapshot:name testCase:[self testCase] record:NO referenceDirectory:referenceImageDir tolerance:tolerance error:&error];
     });
 
     failureMessageForTo(^NSString *{
@@ -149,18 +168,22 @@ EXPMatcherImplementationBegin(haveValidSnapshot, (void)){
 }
 EXPMatcherImplementationEnd
 
+EXPMatcherImplementationBegin(haveValidSnapshot, (void)) {
+    return self.haveValidSnapshotWithTolerance(0);
+}
+EXPMatcherImplementationEnd
+
 EXPMatcherImplementationBegin(recordSnapshot, (void)) {
     __block NSError *error = nil;
 
     BOOL actualIsViewLayerOrViewController = ([actual isKindOfClass:UIView.class] || [actual isKindOfClass:CALayer.class] || [actual isKindOfClass:UIViewController.class]);
 
     prerequisite(^BOOL{
-        return actual && actualIsViewLayerOrViewController;
+        return actual != nil && actualIsViewLayerOrViewController;
     });
 
     match(^BOOL{
         NSString *referenceImageDir = [self _getDefaultReferenceDirectory];
-
         // For view controllers do the viewWill/viewDid dance, then pass view through
         if ([actual isKindOfClass:UIViewController.class]) {
 
@@ -169,7 +192,7 @@ EXPMatcherImplementationBegin(recordSnapshot, (void)) {
             actual = [actual view];
         }
 
-        [EXPExpectFBSnapshotTest compareSnapshotOfViewOrLayer:actual snapshot:sanitizedTestPath() testCase:[self testCase] record:YES referenceDirectory:referenceImageDir error:&error];
+        [EXPExpectFBSnapshotTest compareSnapshotOfViewOrLayer:actual snapshot:sanitizedTestPath() testCase:[self testCase] record:YES referenceDirectory:referenceImageDir tolerance:0 error:&error];
         return NO;
     });
 
@@ -198,12 +221,12 @@ EXPMatcherImplementationBegin(recordSnapshot, (void)) {
 }
 EXPMatcherImplementationEnd
 
-EXPMatcherImplementationBegin(haveValidSnapshotNamed, (NSString *snapshot)){
+EXPMatcherImplementationBegin(haveValidSnapshotNamedWithTolerance, (NSString *snapshot, CGFloat tolerance)) {
     BOOL snapshotIsNil = (snapshot == nil);
     __block NSError *error = nil;
 
     prerequisite(^BOOL{
-        return actual && !(snapshotIsNil);
+        return actual != nil && !(snapshotIsNil);
     });
 
     match(^BOOL{
@@ -214,7 +237,7 @@ EXPMatcherImplementationBegin(haveValidSnapshotNamed, (NSString *snapshot)){
 
             actual = [actual view];
         }
-        return [EXPExpectFBSnapshotTest compareSnapshotOfViewOrLayer:actual snapshot:snapshot testCase:[self testCase] record:NO referenceDirectory:referenceImageDir error:&error];
+        return [EXPExpectFBSnapshotTest compareSnapshotOfViewOrLayer:actual snapshot:snapshot testCase:[self testCase] record:NO referenceDirectory:referenceImageDir tolerance:tolerance error:&error];
     });
 
     failureMessageForTo(^NSString *{
@@ -232,6 +255,11 @@ EXPMatcherImplementationBegin(haveValidSnapshotNamed, (NSString *snapshot)){
 }
 EXPMatcherImplementationEnd
 
+EXPMatcherImplementationBegin(haveValidSnapshotNamed, (NSString *snapshot)) {
+    return self.haveValidSnapshotNamedWithTolerance(snapshot, 0);
+}
+EXPMatcherImplementationEnd
+
 EXPMatcherImplementationBegin(recordSnapshotNamed, (NSString *snapshot)) {
     BOOL snapshotExists = (snapshot != nil);
     BOOL actualIsViewLayerOrViewController = ([actual isKindOfClass:UIView.class] || [actual isKindOfClass:CALayer.class] || [actual isKindOfClass:UIViewController.class]);
@@ -239,12 +267,11 @@ EXPMatcherImplementationBegin(recordSnapshotNamed, (NSString *snapshot)) {
     id actualRef = actual;
 
     prerequisite(^BOOL{
-        return actualRef && snapshotExists && actualIsViewLayerOrViewController;
+        return actualRef != nil && snapshotExists && actualIsViewLayerOrViewController;
     });
 
     match(^BOOL{
         NSString *referenceImageDir = [self _getDefaultReferenceDirectory];
-
         // For view controllers do the viewWill/viewDid dance, then pass view through
         if ([actual isKindOfClass:UIViewController.class]) {
             [actual beginAppearanceTransition:YES animated:NO];
@@ -252,7 +279,7 @@ EXPMatcherImplementationBegin(recordSnapshotNamed, (NSString *snapshot)) {
             actual = [actual view];
         }
 
-        [EXPExpectFBSnapshotTest compareSnapshotOfViewOrLayer:actual snapshot:snapshot testCase:[self testCase] record:YES referenceDirectory:referenceImageDir error:&error];
+        [EXPExpectFBSnapshotTest compareSnapshotOfViewOrLayer:actual snapshot:snapshot testCase:[self testCase] record:YES referenceDirectory:referenceImageDir tolerance:0 error:&error];
         return NO;
     });
 
