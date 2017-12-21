@@ -22,4 +22,15 @@ static NSString const *kUsesDrawViewHierarchyInRectKey = @"ExpectaObject+FBSnaps
     return usesDrawViewHierarchyInRect.boolValue;
 }
 
++ (void)setDeviceAgnostic:(BOOL)deviceAgnostic
+{
+    objc_setAssociatedObject(self, @selector(isDeviceAgnostic), @(deviceAgnostic), OBJC_ASSOCIATION_ASSIGN);
+}
+
++ (BOOL)isDeviceAgnostic
+{
+  NSNumber *isDeviceAgnostic = objc_getAssociatedObject(self, @selector(isDeviceAgnostic));
+  return isDeviceAgnostic.boolValue;
+}
+
 @end
