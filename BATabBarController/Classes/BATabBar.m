@@ -118,6 +118,7 @@ static NSInteger const BAUniqueTag = 57690;
     self.barItemStrokeColor = [UIColor colorWithHex:0xF23555];
     self.backgroundColor = [UIColor colorWithHex:0x1C2129];
     self.barItemLineWidth = 2;
+    self.animationDuration = 0.7;
     
     //create container for animations
     self.container = [[UIView alloc] init];
@@ -230,7 +231,7 @@ static NSInteger const BAUniqueTag = 57690;
     animatingTabTransitionLayer.path = animatingTabTransitionBezierPath.CGPath;
     
     CABasicAnimation *leadingAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    leadingAnimation.duration = 0.7;
+    leadingAnimation.duration = self.animationDuration;
     leadingAnimation.fromValue = @0;
     leadingAnimation.toValue = @1;
     leadingAnimation.removedOnCompletion = NO;

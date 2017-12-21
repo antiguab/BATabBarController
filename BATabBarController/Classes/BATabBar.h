@@ -43,6 +43,11 @@
 @property (assign, nonatomic) CGFloat barItemLineWidth;
 
 /**
+ Duration of the animations
+ */
+@property (assign, nonatomic) CGFloat animationDuration;
+
+/**
  All Tabs in the tab bar
  */
 @property (weak, nonatomic) NSArray<__kindof BATabBarItem *>*tabBarItems;
