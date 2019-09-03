@@ -1,0 +1,14 @@
+use_frameworks!
+platform :ios, '11.0'
+
+target 'BATabBarController_Example' do
+  pod 'BATabBarController', :path => '../'
+  pod 'SnapKit', '~> 5.0'
+
+  target 'BATabBarController_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0'
+  end
+end

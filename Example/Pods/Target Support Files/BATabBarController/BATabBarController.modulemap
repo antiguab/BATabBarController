@@ -1,0 +1,6 @@
+framework module BATabBarController {
+  umbrella header "BATabBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}
