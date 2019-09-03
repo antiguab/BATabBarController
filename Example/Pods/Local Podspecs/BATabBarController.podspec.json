@@ -25,7 +25,7 @@
   "platforms": {
     "ios": "11.0"
   },
-  "swift_version": "4.2",
+  "swift_versions": "4.2",
   "requires_arc": true,
   "source_files": "BATabBarController/Classes/**/*",
   "frameworks": "UIKit",
@@ -33,5 +33,6 @@
     "SnapKit": [
 
     ]
-  }
+  },
+  "swift_version": "4.2"
 }
