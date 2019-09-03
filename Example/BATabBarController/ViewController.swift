@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         //testController.tabBarBackgroundColor = .black
         
         //tab bar item stroke color example
-        testController.tabBarItemStrokeColor = .blue
+//        testController.tabBarItemStrokeColor = .blue
         
         //Tab bar line width example
         //testController.tabBarItemLineWidth = 9.0
