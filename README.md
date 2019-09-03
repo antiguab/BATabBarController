@@ -4,7 +4,6 @@
 [![Version](https://img.shields.io/cocoapods/v/BATabBarController.svg?style=flat)](http://cocoapods.org/pods/BATabBarController)
 [![License](https://img.shields.io/cocoapods/l/BATabBarController.svg?style=flat)](http://cocoapods.org/pods/BATabBarController)
 [![Platform](https://img.shields.io/cocoapods/p/BATabBarController.svg?style=flat)](http://cocoapods.org/pods/BATabBarController)
-
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 
