@@ -12,8 +12,6 @@
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		BC753477B3305498E57388E6 /* Pods_BATabBarController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FD25AF997213B4CAF864EAA /* Pods_BATabBarController_Tests.framework */; };
-		D0036FE8231DDCF700BC67C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0036FE7231DDCF700BC67C6 /* Images.xcassets */; };
-		D0036FE9231DDCF700BC67C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0036FE7231DDCF700BC67C6 /* Images.xcassets */; };
 		D0036FEB231DDD1C00BC67C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0036FEA231DDD1B00BC67C6 /* LaunchScreen.storyboard */; };
 		D0036FEC231DDD1C00BC67C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0036FEA231DDD1B00BC67C6 /* LaunchScreen.storyboard */; };
 		D0036FEE231DED7300BC67C6 /* BATabBarControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036FED231DED7300BC67C6 /* BATabBarControllerSpecs.swift */; };
@@ -22,6 +20,7 @@
 		D0036FF4231DFE7600BC67C6 /* BATabBarSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036FF3231DFE7600BC67C6 /* BATabBarSpecs.swift */; };
 		D0036FF6231DFE8300BC67C6 /* BATabBarItemSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036FF5231DFE8300BC67C6 /* BATabBarItemSpecs.swift */; };
 		D0036FF8231DFE9100BC67C6 /* UIColorSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0036FF7231DFE9100BC67C6 /* UIColorSpecs.swift */; };
+		D02C674E231E34C1006F34DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D02C674D231E34C1006F34DE /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +48,6 @@
 		607FACE51AFB9204008FA782 /* BATabBarController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BATabBarController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		807D82150BF1C6860E48AED1 /* Pods-BATabBarController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BATabBarController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BATabBarController_Tests/Pods-BATabBarController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D0036FE7231DDCF700BC67C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../../../../../Downloads/BATabBarController-master/Example/BATabBarController/Images.xcassets"; sourceTree = "<group>"; };
 		D0036FEA231DDD1B00BC67C6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0036FED231DED7300BC67C6 /* BATabBarControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BATabBarControllerSpecs.swift; sourceTree = "<group>"; };
 		D0036FEF231DEE9900BC67C6 /* BATestUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BATestUtil.swift; sourceTree = "<group>"; };
@@ -57,6 +55,7 @@
 		D0036FF3231DFE7600BC67C6 /* BATabBarSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BATabBarSpecs.swift; sourceTree = "<group>"; };
 		D0036FF5231DFE8300BC67C6 /* BATabBarItemSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BATabBarItemSpecs.swift; sourceTree = "<group>"; };
 		D0036FF7231DFE9100BC67C6 /* UIColorSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorSpecs.swift; sourceTree = "<group>"; };
+		D02C674D231E34C1006F34DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D90745721AB4C4193ADDA34C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F171D0740DA4B27C1FBC18F7 /* Pods-BATabBarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BATabBarController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BATabBarController_Example/Pods-BATabBarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,10 +104,10 @@
 		607FACD21AFB9204008FA782 /* Example for BATabBarController */ = {
 			isa = PBXGroup;
 			children = (
+				D02C674D231E34C1006F34DE /* Images.xcassets */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				D0036FE7231DDCF700BC67C6 /* Images.xcassets */,
 				D0036FEA231DDD1B00BC67C6 /* LaunchScreen.storyboard */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -263,9 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02C674E231E34C1006F34DE /* Images.xcassets in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				D0036FEB231DDD1C00BC67C6 /* LaunchScreen.storyboard in Resources */,
-				D0036FE8231DDCF700BC67C6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +272,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0036FE9231DDCF700BC67C6 /* Images.xcassets in Resources */,
 				D0036FEC231DDD1C00BC67C6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
