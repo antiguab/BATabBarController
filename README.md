@@ -12,7 +12,6 @@
 <img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/gif2.gif" width="450px" />
 
 ## Recent Versions
-
 Swift: 1.0.0
 Objc:  0.1.6
 
