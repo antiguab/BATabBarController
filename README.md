@@ -11,7 +11,7 @@
 <img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/gif1.gif" width="450px" />
 <img src="https://raw.githubusercontent.com/antiguab/BATabBarController/master/readmeAssets/gif2.gif" width="450px" />
 
-Now available in Swift (>1.0)!!!
+Now available in Swift (>1.0.0)!!!
 
 The standard TabBarController is very limited in terms of animations when you make a selection. This cocoapod allows you to use one with a sleek animation with customizable properties!
 
