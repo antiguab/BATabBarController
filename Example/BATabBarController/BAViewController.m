@@ -60,8 +60,8 @@ typedef NS_ENUM(NSInteger, BATabBarType) {
         UIViewController *vc2 = [[UIViewController alloc] init];
         UIViewController *vc3 = [[UIViewController alloc] init];
         vc1.view.backgroundColor = [UIColor colorWithHex:0x222B30];
-        vc2.view.backgroundColor = [UIColor colorWithHex:0x222B30];
-        vc3.view.backgroundColor = [UIColor colorWithHex:0x222B30];
+        vc2.view.backgroundColor = [UIColor colorWithHex:0x95a5a6];
+        vc3.view.backgroundColor = [UIColor colorWithHex:0xecf0f1];
 
         
         
