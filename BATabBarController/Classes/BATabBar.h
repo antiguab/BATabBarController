@@ -30,12 +30,12 @@
 /**
  Currently selected Tab
  */
-@property (weak, nonatomic) BATabBarItem *currentTabBarItem;
+@property (strong, nonatomic) BATabBarItem *currentTabBarItem;
 
 /**
  Color of the outline when selected and during animations
  */
-@property (weak, nonatomic) UIColor *barItemStrokeColor;
+@property (strong, nonatomic) UIColor *barItemStrokeColor;
 
 /**
  Width of the outline when selected and during animations
@@ -50,7 +50,7 @@
 /**
  All Tabs in the tab bar
  */
-@property (weak, nonatomic) NSArray<__kindof BATabBarItem *>*tabBarItems;
+@property (strong, nonatomic) NSArray<__kindof BATabBarItem *>*tabBarItems;
 
 /**
  Delegate used to add external action to a tab bar click

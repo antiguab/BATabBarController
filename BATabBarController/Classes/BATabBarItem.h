@@ -29,22 +29,22 @@
 /**
 UIView that houses the selected/unselected icons
  */
-@property (nonatomic, strong) UIView *innerTabBarItem;
+@property (strong, nonatomic) UIView *innerTabBarItem;
 
 /**
  Width of the outline when a tab is selected
  */
-@property (nonatomic, assign) CGFloat strokeWidth;
+@property (assign, nonatomic) CGFloat strokeWidth;
 
 /**
  Color of the outline and text when a tab is selected
  */
-@property (nonatomic, strong) UIColor *strokeColor;
+@property (strong, nonatomic) UIColor *strokeColor;
 
 /**
  Tab title
  */
-@property (nonatomic, strong) UILabel *title;
+@property (strong, nonatomic) UILabel *title;
 
 /**
  Image view for an unselected tab

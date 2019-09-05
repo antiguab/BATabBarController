@@ -27,27 +27,27 @@
 /**
  Badge value for this tab. Setting to nil will always hide it
  */
-@property (nonatomic, strong) NSNumber *badgeValue;
+@property (strong, nonatomic) NSNumber *badgeValue;
 
 /**
  Badge value / title text color
  */
-@property (nonatomic, strong) UIColor *badgeValueColor;
+@property (strong, nonatomic) UIColor *badgeValueColor;
 
 /**
  Optional badge background color. Set to nil to not draw a background
  */
-@property (nonatomic, strong) UIColor *badgeColor;
+@property (strong, nonatomic) UIColor *badgeColor;
 
 /**
  Badge stroke color. Set to nil to not draw a stroke
  */
-@property (nonatomic, strong) UIColor *badgeStrokeColor;
+@property (strong, nonatomic) UIColor *badgeStrokeColor;
 
 /**
  Badge stroke width. Will be ignored if `badgeStrokeColor` is nil
  */
-@property (nonatomic, assign) CGFloat badgeStrokeWidth;
+@property (assign, nonatomic) CGFloat badgeStrokeWidth;
 
 - (instancetype) initWithValue:(NSNumber*)badgeValue backgroundColor:(UIColor*)backgroundColor strokeColor:(UIColor*)strokeColor width:(CGFloat)width;
 

@@ -26,8 +26,8 @@ static double const BABadgeHeight = 18.0;
 static double const BABadgePadding = 5.0;
 
 @interface BATabBarBadge()
-@property (nonatomic, retain) NSAttributedString *attributedValue;
-@property (nonatomic, assign) CGFloat calculatedAttributedWidth;
+@property (retain, nonatomic) NSAttributedString *attributedValue;
+@property (assign, nonatomic) CGFloat calculatedAttributedWidth;
 @end
 
 @implementation BATabBarBadge

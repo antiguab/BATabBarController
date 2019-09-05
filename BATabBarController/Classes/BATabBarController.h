@@ -32,7 +32,7 @@
 /**
  Custom tab bar
  */
-@property (nonatomic, strong) BATabBar* tabBar;
+@property (strong, nonatomic) BATabBar* tabBar;
 
 /**
  View controllers associated with the tabs
