@@ -226,8 +226,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				D39D412018839498872C2DE4 /* [CP] Embed Pods Frameworks */,
-				2E1542DF1B0F48015376CDFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,8 +244,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				9CEC10E757B989D65A54F12C /* [CP] Embed Pods Frameworks */,
-				0FFE73B95159C531B29B188D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,65 +317,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FFE73B95159C531B29B188D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BATabBarController_Tests/Pods-BATabBarController_Tests-resources.sh\"\n";
-		};
-		2E1542DF1B0F48015376CDFB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BATabBarController_Example/Pods-BATabBarController_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9CEC10E757B989D65A54F12C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BATabBarController_Tests/Pods-BATabBarController_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D39D412018839498872C2DE4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BATabBarController_Example/Pods-BATabBarController_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EBCCBBE90A3C6E5211574CFB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
