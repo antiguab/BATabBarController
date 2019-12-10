@@ -2,13 +2,13 @@ PODS:
   - BATabBarController (1.0.1):
     - SnapKit
   - Nimble (7.3.4)
-  - Quick (1.2.0)
+  - Quick (2.2.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - BATabBarController (from `../`)
   - Nimble (~> 7.0)
-  - Quick (~> 1.2.0)
+  - Quick (~> 2.2.0)
   - SnapKit (~> 5.0)
 
 SPEC REPOS:
@@ -24,9 +24,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   BATabBarController: c22f1ad9b6cddd29af926c9f3129fb1038cb094c
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: c18d8effaacfacd45f56e022c57c61a2d75aca11
+PODFILE CHECKSUM: b03495873c170c64c4ba575add9a8adfc01ec441
 
 COCOAPODS: 1.8.4
