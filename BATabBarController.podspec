@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/antiguab/BATabBarController.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/brantigua'
   s.platform         = :ios, '11.0'
-  s.swift_version    = '4.2'
+  s.swift_version    = '5.0'
   s.requires_arc     = true
   s.source_files = 'BATabBarController/Classes/**/*'
   s.frameworks = 'UIKit'
