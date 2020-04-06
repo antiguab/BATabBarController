@@ -229,10 +229,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S9TWQ3U49W;
 						LastSwiftMigration = 1120;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S9TWQ3U49W;
 						LastSwiftMigration = 1120;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -520,6 +522,7 @@
 			baseConfigurationReference = F171D0740DA4B27C1FBC18F7 /* Pods-BATabBarController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S9TWQ3U49W;
 				INFOPLIST_FILE = BATabBarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -535,6 +538,7 @@
 			baseConfigurationReference = 2EB6F3A1F3AEC879A1BA61A0 /* Pods-BATabBarController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S9TWQ3U49W;
 				INFOPLIST_FILE = BATabBarController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -549,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BBD0C24994DF140E67DAAEF /* Pods-BATabBarController_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S9TWQ3U49W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -571,6 +576,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 807D82150BF1C6860E48AED1 /* Pods-BATabBarController_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S9TWQ3U49W;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

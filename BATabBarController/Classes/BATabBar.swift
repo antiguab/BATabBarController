@@ -30,13 +30,6 @@ protocol BATabBarDelegate: AnyObject {
 class BATabBar: UIView {
     
     enum BATabBarProperties {
-        //Tried getting these values with SafeArea, but no luck.
-        // 83 = [Standard ToolBar Height] + [Safe Area Height Estimate] = 49 + 34
-        static let PortraitTotalHeight = 83
-        
-        // 70 = [Standard ToolBar Height] + [Safe Area Height Estimate] = 49 + 21
-        static let LandscapeTotalHeight = 70
-        
         //Standard Tool bar Height
         static let TabBarHeight = 49
         
@@ -201,6 +194,25 @@ class BATabBar: UIView {
             tabBarItem.strokeColor = barItemStrokeColor
             tabBarItem.strokeWidth = barItemLineWidth
             tabBarItem.addTarget(self, action: #selector(didSelectItem(_:)), for: .touchUpInside)
+            
+            //this is to avoid users pressing down on multiple tab items at once
+            tabBarItem.addTarget(self, action: #selector(disableAllButtonsBut(_:)), for: .touchDown)
+
+        }
+    }
+    
+    @objc func disableAllButtonsBut(_ sender: BATabBarItem){
+        for i in 0..<tabBarItems.count {
+            let tabBarItem = tabBarItems[i]
+            if(tabBarItem != sender) {
+                tabBarItem.isUserInteractionEnabled = false
+            }
+        }
+    }
+    
+    func enableAllButtons(){
+        for i in 0..<tabBarItems.count {
+            tabBarItems[i].isUserInteractionEnabled = true
         }
     }
     
@@ -216,6 +228,7 @@ class BATabBar: UIView {
             self.currentTabBarItem?.title?.textColor = self.barItemStrokeColor
             self.currentTabBarItem?.showOutline()
             self.isUserInteractionEnabled = true
+            self.enableAllButtons()
         }
         
         if(!animated){
