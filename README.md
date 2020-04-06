@@ -14,7 +14,7 @@
 ## Recent Versions
 | Language  | Version |
 | ------------- | ------------- |
-| Swift 5  | 2.0.0  |
+| Swift 5  | 2.0.1  |
 | Swift 4  | 1.0.1  |
 | Obj C  | 0.1.6  |
 
