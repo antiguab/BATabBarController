@@ -1,5 +1,5 @@
 PODS:
-  - BATabBarController (2.0.1):
+  - BATabBarController (2.0.2):
     - SnapKit
   - Nimble (7.3.4)
   - Quick (2.2.0)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BATabBarController: 5edb68c72737c544e804480cf322c6b67c4cebc7
+  BATabBarController: 7f50519b3743b4e779c71a8e147ac9e8c50e0c7d
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb

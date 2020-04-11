@@ -63,6 +63,10 @@ class BATabBar: UIView {
     
     //Container for the tab bar - this is so the toolbar stays the standard height on iphoneX
     var tabBarContainer: UIView?
+    
+    //Constraint to change height based on safe area insets.Not sure why `updateConstraints` creates two height const instead of replacing. Usng a var here to update manually instead
+    var heightConstraint: Constraint?
+
 
     //All tabs in the tab bar
     var tabBarItems: [BATabBarItem] = [] {
@@ -73,8 +77,10 @@ class BATabBar: UIView {
     
     override func updateConstraints() {
         if(!constraintsLoaded) {
+            
+            heightConstraint?.deactivate()
             self.snp.makeConstraints { make in
-                make.height.equalTo(BATabBarProperties.TabBarHeight + Int(self.safeAreaInsets.bottom))
+                heightConstraint = make.height.equalTo(BATabBarProperties.TabBarHeight + Int(self.safeAreaInsets.bottom)).constraint
                 make.leading.trailing.bottom.equalToSuperview()
             }
             
@@ -112,8 +118,11 @@ class BATabBar: UIView {
     
     override func layoutSubviews() {
         //tab bar constraints will change depending on orientation
-        self.snp.updateConstraints { make in
-            make.height.equalTo(BATabBarProperties.TabBarHeight + Int(self.safeAreaInsets.bottom))
+       
+        heightConstraint?.deactivate()
+        self.snp.makeConstraints { make in
+            //SafeAreaInsets seems to set after a couple loops. Not sure why.
+            heightConstraint = make.height.equalTo(BATabBarProperties.TabBarHeight + Int(self.safeAreaInsets.bottom)).constraint
         }
     }
     
